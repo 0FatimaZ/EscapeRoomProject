@@ -82,44 +82,13 @@ public class PlayerMove : MonoBehaviour
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Living_room"))
-        {
-            transform.position = Startpoint;
-        }
-
-        if (other.gameObject.CompareTag("Demo"))
-        {
-            demo.SetActive(true);
-        }
-
-        if (other.gameObject.CompareTag("Bedroom") && GetComponentInChildren<CameraScripto>().key == false)
-        {
-            locked_door.SetActive(true);
-        }
-
-        if (other.gameObject.CompareTag("Cabin") && GetComponentInChildren<CameraScripto>().bobbypin == false)
-        {
-            cabin_locked.SetActive(true);
-        }
+        
 
     }
 
     private void OnTriggerExit(Collider other)
     {
-        if (other.gameObject.CompareTag("Demo"))
-        {
-            demo.SetActive(false);
-        }
-
-        if (other.gameObject.CompareTag("Bedroom") && GetComponentInChildren<CameraScripto>().key == false)
-        {
-            locked_door.SetActive(false);
-        }
-
-        if (other.gameObject.CompareTag("Cabin") && GetComponentInChildren<CameraScripto>().bobbypin == false)
-        {
-            cabin_locked.SetActive(false);
-        }
+        
     }
 }
 
