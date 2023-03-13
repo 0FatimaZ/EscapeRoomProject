@@ -5,6 +5,22 @@ TagManager:
   serializedVersion: 2
   tags:
   - Door
+  - PMap
+  - BMap
+  - PArt
+  - BArt
+  - Calc
+  - PadL
+  - Candy
+  - Tongue
+  - Key
+  - Knife
+  - Teddy
+  - Cat
+  - Dog
+  - Poem
+  - Puzz
+  - Glass
   layers:
   - Default
   - TransparentFX

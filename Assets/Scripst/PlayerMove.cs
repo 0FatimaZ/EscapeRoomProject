@@ -78,6 +78,11 @@ public class PlayerMove : MonoBehaviour
 
         animator.SetFloat("Velocity", Mathf.Abs(inputY + inputX));
 
+        if (Input.GetKeyDown("e"))
+        {
+            //bool, skal være sand
+        }
+
     }
 
     void OnTriggerEnter(Collider other)

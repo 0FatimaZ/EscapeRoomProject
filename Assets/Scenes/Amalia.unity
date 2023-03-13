@@ -179,7 +179,7 @@ MonoBehaviour:
     m_Bits: 256
   groundDetectionTransform: {fileID: 2010992209}
   isGrounded: 0
-  movementSpeed: 5
+  movementSpeed: 3
   gravityFactor: -9.81
   currentVelY: 0
   controller: {fileID: 514840161}
@@ -543,7 +543,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 21b76cd8d1bd0a64391b4a20e03dcebd, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mouseSensitivity: 100
+  mouseSensitivity: 150
   playerbody: {fileID: 514840166}
   EndingCam: {fileID: 0}
   audiosource: {fileID: 0}
