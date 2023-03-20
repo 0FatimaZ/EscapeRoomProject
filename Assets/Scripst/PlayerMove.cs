@@ -23,10 +23,28 @@ public class PlayerMove : MonoBehaviour
     [Header("Animation")]
     public Animator animator;
 
-    [Header("UI")]
-    public GameObject locked_door;
-    public GameObject demo;
-    public GameObject cabin_locked;
+    
+    public GameObject door, pmap, bmap, part, bart, calc, padl, candy, tongue, key, knife, teddy, cat, dog, poem, puzz, glass;
+
+    [Header("Booleans")]
+    public bool Door = false;
+    public bool PMap = false;
+    public bool BMap = false;
+    public bool PArt = false;
+    public bool BArt = false;
+    public bool Calc = false;
+    public bool PadL = false;
+    public bool Candy = false;
+    public bool Tongue = false;
+    public bool Key = false;
+    public bool Knife = false;
+    public bool Teddy = false;
+    public bool Cat = false;
+    public bool Dog = false;
+    public bool Poem = false;
+    public bool Puzz = false;
+    public bool Glass = false;
+
 
     // Start is called before the first frame update
     void Start()
@@ -76,24 +94,205 @@ public class PlayerMove : MonoBehaviour
         controller.Move(movement * movementSpeed * Time.deltaTime);
         controller.Move(new Vector3(0, currentVelY * Time.deltaTime, 0));
 
-        animator.SetFloat("Velocity", Mathf.Abs(inputY + inputX));
+        //animator.SetFloat("Velocity", Mathf.Abs(inputY + inputX));
 
         if (Input.GetKeyDown("e"))
         {
             //bool, skal være sand
+            if (Door == true)
+            {
+                door.transform.GetComponent<Door>().OpenorClose();
+            }
+
+            if (PMap == true)
+            {
+                pmap.SetActive(true);
+                PMap = false;
+            }
+
+            if (PMap == false)
+            {
+                pmap.SetActive(false);
+            }
         }
 
     }
 
     void OnTriggerEnter(Collider other)
     {
+        if (other.gameObject.CompareTag("Door"))
+        {
+            Door = true;
+        }
+
+        if (other.gameObject.CompareTag("PMap"))
+        {
+            PMap = true;
+        }
+
+        if (other.gameObject.CompareTag("BMap"))
+        {
+            BMap = true;
+        }
+
+        if (other.gameObject.CompareTag("PArt"))
+        {
+            PArt = true;
+        }
+
+        if (other.gameObject.CompareTag("BArt"))
+        {
+            BArt = true;
+        }
         
+        if (other.gameObject.CompareTag("Calc"))
+        {
+            Calc = true;
+        }
+
+        if (other.gameObject.CompareTag("PadL"))
+        {
+            PadL = true;
+        }
+
+        if (other.gameObject.CompareTag("Candy"))
+        {
+            Candy = true;
+        }
+
+        if (other.gameObject.CompareTag("Tongue"))
+        {
+            Tongue = true;
+        }
+
+        if (other.gameObject.CompareTag("Key"))
+        {
+            Key = true;
+        }
+
+        if (other.gameObject.CompareTag("Knife"))
+        {
+            Knife = true;
+        }
+
+        if (other.gameObject.CompareTag("Teddy"))
+        {
+            Teddy = true;
+        }
+
+        if (other.gameObject.CompareTag("Cat"))
+        {
+            Cat = true;
+        }
+
+        if (other.gameObject.CompareTag("Dog"))
+        {
+            Dog = true;
+        }
+
+        if (other.gameObject.CompareTag("Poem"))
+        {
+            Poem = true;
+        }
+
+        if (other.gameObject.CompareTag("Puzz"))
+        {
+            Puzz = true;
+        }
+
+        if (other.gameObject.CompareTag("Glass"))
+        {
+            Glass = true;
+        }
 
     }
 
     private void OnTriggerExit(Collider other)
     {
-        
+        if (other.gameObject.CompareTag("Door"))
+        {
+            Door = false;
+        }
+
+        if (other.gameObject.CompareTag("PMap"))
+        {
+            PMap = false;
+        }
+
+        if (other.gameObject.CompareTag("BMap"))
+        {
+            BMap = false;
+        }
+
+        if (other.gameObject.CompareTag("PArt"))
+        {
+            PArt = false;
+        }
+
+        if (other.gameObject.CompareTag("BArt"))
+        {
+            BArt = false;
+        }
+
+        if (other.gameObject.CompareTag("Calc"))
+        {
+            Calc = false;
+        }
+
+        if (other.gameObject.CompareTag("PadL"))
+        {
+            PadL = false;
+        }
+
+        if (other.gameObject.CompareTag("Candy"))
+        {
+            Candy = false;
+        }
+
+        if (other.gameObject.CompareTag("Tongue"))
+        {
+            Tongue = false;
+        }
+
+        if (other.gameObject.CompareTag("Key"))
+        {
+            Key = false;
+        }
+
+        if (other.gameObject.CompareTag("Knife"))
+        {
+            Knife = false;
+        }
+
+        if (other.gameObject.CompareTag("Teddy"))
+        {
+            Teddy = false;
+        }
+
+        if (other.gameObject.CompareTag("Cat"))
+        {
+            Cat = false;
+        }
+
+        if (other.gameObject.CompareTag("Dog"))
+        {
+            Dog = false;
+        }
+
+        if (other.gameObject.CompareTag("Poem"))
+        {
+            Poem = false;
+        }
+
+        if (other.gameObject.CompareTag("Puzz"))
+        {
+            Puzz = false;
+        }
+
+        if (other.gameObject.CompareTag("Glass"))
+        {
+            Glass = false;
+        }
     }
 }
 
