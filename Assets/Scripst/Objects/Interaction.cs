@@ -7,7 +7,7 @@ public class Interaction : MonoBehaviour
 {
     public Image UI;
     public Image interactionText;
-    public float interactionDistance = 5.0f;
+    public float interactionDistance = 1.0f;
     private Transform playerTransform;
     private CharacterController characterController;
     private bool wasCharacterControllerEnabled;
@@ -42,9 +42,9 @@ public class Interaction : MonoBehaviour
                 }
             }
         }
-        /*else
+        else
         {
-            interactionText.gameObject.SetActive(false);
-        }*/
+            //interactionText.gameObject.SetActive(false);
+        }
     }
 }
