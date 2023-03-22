@@ -104,16 +104,6 @@ public class PlayerMove : MonoBehaviour
                 door.transform.GetComponent<Door>().OpenorClose();
             }
 
-            if (PMap == true)
-            {
-                pmap.SetActive(true);
-                PMap = false;
-            }
-
-            if (PMap == false)
-            {
-                pmap.SetActive(false);
-            }
         }
 
     }

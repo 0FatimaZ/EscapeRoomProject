@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 4137809062669013112}
   - component: {fileID: 2200153701863630002}
   - component: {fileID: 8250135364537869233}
+  - component: {fileID: -2122986059798404643}
   m_Layer: 0
   m_Name: Blackroom map
   m_TagString: Untagged
@@ -97,3 +98,18 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.41364646, y: 0.47914147, z: 0.16339062}
   m_Center: {x: -0.005913347, y: -0.0008785624, z: 0.024612723}
+--- !u!114 &-2122986059798404643
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 398700863766922599}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  UI: {fileID: 0}
+  interactionText: {fileID: 0}
+  interactionDistance: 5
