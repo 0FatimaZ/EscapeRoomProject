@@ -6,7 +6,7 @@ using TMPro;
 using UnityEngine.SceneManagement;
 
 public class Calculator : MonoBehaviour
-{
+{/*
     [SerializeField] private TMP_Text Ans;
     [SerializeField] private int maxLength = 4;
     [SerializeField] private float displayTime = 2.0f;
@@ -44,4 +44,5 @@ public class Calculator : MonoBehaviour
             timeLeft = displayTime;
             wrong.Play();
         }
+ */
 }
