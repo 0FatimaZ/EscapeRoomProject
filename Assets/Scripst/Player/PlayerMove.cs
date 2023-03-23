@@ -25,13 +25,11 @@ public class PlayerMove : MonoBehaviour
 
     [Header("Objects")]
     public GameObject door;
-    public GameObject art;
     public GameObject knife;
 
     [Header("Booleans")]
     public bool Door = false;
     public bool Knife = false;
-    public bool Art = false;
 
 
     // Start is called before the first frame update
@@ -108,10 +106,6 @@ public class PlayerMove : MonoBehaviour
             Knife = true;
         }
 
-        if (other.gameObject.CompareTag("Art"))
-        {
-            Art = true;
-        }
 
     }
 

@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class Art : MonoBehaviour
 {
-    public GameObject art_txt;
+    /*public GameObject art_txt;
 
     // Start is called before the first frame update
     void Start()
@@ -42,5 +42,5 @@ public class Art : MonoBehaviour
             }
 
         }
-    }
+    }*/
 }
