@@ -5111,6 +5111,7 @@ GameObject:
   - component: {fileID: 623189151154414489}
   - component: {fileID: 3405553042005645140}
   - component: {fileID: 3405553042005645141}
+  - component: {fileID: 3405553042005645142}
   m_Layer: 0
   m_Name: caculator
   m_TagString: Untagged
@@ -9322,6 +9323,19 @@ MonoBehaviour:
   UI: {fileID: 1274039140738658977}
   interactionText: {fileID: 0}
   interactionDistance: 1
+--- !u!114 &3405553042005645142
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1416099830857466444}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0168f7c8413005b44beabbe1f8d91636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemdata: {fileID: 0}
 --- !u!23 &3427091662304903264
 MeshRenderer:
   m_ObjectHideFlags: 0
