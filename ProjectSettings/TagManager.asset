@@ -21,6 +21,8 @@ TagManager:
   - Poem
   - Puzz
   - Glass
+  - Player1
+  - Player2
   layers:
   - Default
   - TransparentFX
