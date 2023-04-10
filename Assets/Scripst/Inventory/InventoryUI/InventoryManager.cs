@@ -3,7 +3,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*public class InventoryManager : MonoBehaviour
+public class InventoryManager : MonoBehaviour
 {
     public GameObject SlotPrefab;
     public List<InventorySlot> InventorySlots = new List<InventorySlot>(3);
@@ -61,4 +61,4 @@ using UnityEngine;
 
 
     }
-}*/
+}

@@ -4,7 +4,7 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-/*public class InventorySlot : MonoBehaviour
+public class InventorySlot : MonoBehaviour
 {
     public Image ObjectIcon;
     public TextMeshProUGUI NameLabel;
@@ -32,4 +32,4 @@ using UnityEngine.UI;
 
     }
 
-}*/
+}

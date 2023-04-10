@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-/*public class Collector : MonoBehaviour
+public class Collector : MonoBehaviour
 {
 
     private void OnTriggerEnter(Collider collision)
@@ -16,4 +16,4 @@ using UnityEngine;
 
     
 
-}*/
+}
