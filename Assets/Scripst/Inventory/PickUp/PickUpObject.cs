@@ -13,6 +13,7 @@ public class PickUpObject : MonoBehaviour, ICollectible
     public void Collect()
     {
         Destroy(gameObject);
+        gameObject.transform.position = player.transform.position + (player.transform.forward * 0.5f); //at ændre gameobject position til et andet sted
         Collected?.Invoke(itemdata);
     }
 
