@@ -10,8 +10,8 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: f9de84989bdea4c4e867a5e07f03891c, type: 3}
-  m_Name: New Item Data
+  m_Name: Poem
   m_EditorClassIdentifier: 
-  displayName: Calculator
-  icon: {fileID: 0}
-  prefab: {fileID: 6010575001159351418, guid: 8d9f262217fabf54e893d08eadfa219a, type: 3}
+  displayName: Poem
+  icon: {fileID: 21300000, guid: 7901c3445b997d5429d8eae6b3fc4be3, type: 3}
+  prefab: {fileID: 7917558766831266416, guid: 72a55294d8a08a64c8c894408a3cef0f, type: 3}

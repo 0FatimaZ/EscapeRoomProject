@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f9de84989bdea4c4e867a5e07f03891c, type: 3}
+  m_Name: ColorPuzzle
+  m_EditorClassIdentifier: 
+  displayName: Color Puzzle
+  icon: {fileID: 21300000, guid: d65d2e9619889fa49a4be0c3f19e3e28, type: 3}
+  prefab: {fileID: 5310541904827687961, guid: 9f5db3ad58821214080d49d4a851cab5, type: 3}
