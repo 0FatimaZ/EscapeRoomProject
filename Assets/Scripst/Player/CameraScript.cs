@@ -12,14 +12,8 @@ public class CameraScript : MonoBehaviour
     public Transform playerbody;
     float xRotation = 0;
 
-    [Header("Objects")]
-    
-    [Header("Ending")]
-    public GameObject EndingCam;
-    public GameObject audiosource;
-    public GameObject Player;
-    public GameObject Fire;
-    public bool end = false;
+    [Header("UI")]
+    public GameObject start_vc;
 
 
 
@@ -28,6 +22,8 @@ public class CameraScript : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
+        start_vc.SetActive(true);
+        StartCoroutine(Start_message());
     }
 
     // Update is called once per frame
@@ -44,4 +40,9 @@ public class CameraScript : MonoBehaviour
 
     }
 
+    IEnumerator Start_message()
+    {
+        yield return new WaitForSeconds(34);
+        start_vc.SetActive(false);
+    }
 }

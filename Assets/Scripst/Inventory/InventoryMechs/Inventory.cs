@@ -18,12 +18,12 @@ public class Inventory : MonoBehaviour
 
     private void OnEnable()
     {
-        PickUpObject.Collected += Add;
+       // PickUpObject.Collected += Add;
     }
 
     private void OnDisable()
     {
-        PickUpObject.Collected -= Add;
+     // PickUpObject.Collected -= Add;
     }
 
     public void Add(ItemData itemdata)
