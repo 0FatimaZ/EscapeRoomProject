@@ -2,6 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using TMPro;
+
+//[System.Serializable]
+/*public struct SubtitleText
+{
+    public float time;
+    public string text;
+}*/
 
 public class CameraScript : MonoBehaviour
 
@@ -12,9 +20,11 @@ public class CameraScript : MonoBehaviour
     public Transform playerbody;
     float xRotation = 0;
 
-    [Header("UI")]
+    [Header("Subtitles")]
     public GameObject start_vc;
-
+    GameObject subtitleGO;
+    TextMeshProUGUI subtitles;
+    public SubtitleText[] subtitleText;
 
 
 
@@ -22,8 +32,10 @@ public class CameraScript : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        start_vc.SetActive(true);
-        StartCoroutine(Start_message());
+        //subtitleGO = game.subtitles;
+        //subtitles = game.subtitles.GetComponentInChildren<TextMeshProUGUI>();
+        //start_vc.SetActive(true);
+        //StartSubtitles();
     }
 
     // Update is called once per frame
@@ -45,4 +57,21 @@ public class CameraScript : MonoBehaviour
         yield return new WaitForSeconds(34);
         start_vc.SetActive(false);
     }
+
+    /*IEnumerator SubtitleCoroutine()
+    {
+        subtitleGO.SetActive(true);
+        foreach(var voiceLine in subtitleText)
+        {
+            subtitles.text = voiceLine.text;
+
+            yield return new WaitForSecondsRealtime(voiceLine.time);
+        }
+    }
+
+    void StartSubtitles()
+    {
+        StartCoroutine(SubtitleCoroutine());
+    }*/
+   
 }
