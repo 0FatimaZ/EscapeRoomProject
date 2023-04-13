@@ -6,10 +6,12 @@ using UnityEngine;
 
 public class Movmentv2 : NetworkBehaviour
 {
+   
     public float speed = 5f;
 
     void Update()
     {
+         if (!IsOwner) return;
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
