@@ -8,12 +8,13 @@ public class PickUpObject : MonoBehaviour, ICollectible
 {
     public static PickUpItems Collected;
     public delegate void PickUpItems(ItemData itemData);
-    public ItemData itemdata;
+    public ItemData itemData;
     
     public void Collect()
     {
+        Debug.Log("Collided");
         Destroy(gameObject);
-        Collected?.Invoke(itemdata);
+        Collected?.Invoke(itemData);
     }
 
     
