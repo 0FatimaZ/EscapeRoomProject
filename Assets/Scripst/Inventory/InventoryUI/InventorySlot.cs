@@ -27,8 +27,8 @@ public class InventorySlot : MonoBehaviour
         //ObjectIcon.enabled = true;
         //NameLabel.enabled = true;
 
-        ObjectIcon.sprite = item.itemdata.icon;
-        NameLabel.text = item.itemdata.displayName;
+        ObjectIcon.sprite = item.itemData.icon;
+        NameLabel.text = item.itemData.displayName;
 
     }
 
