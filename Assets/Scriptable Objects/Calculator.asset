@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Calculator
   m_EditorClassIdentifier: 
   displayName: Calculator
-  icon: {fileID: 21300000, guid: e7ff335b1495be94ca82492171ef5661, type: 3}
+  icon: {fileID: 21300000, guid: f38e01ab644faea44b757881f774ee99, type: 3}
   prefab: {fileID: 6010575001159351418, guid: 8d9f262217fabf54e893d08eadfa219a, type: 3}

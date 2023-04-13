@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Poem
   m_EditorClassIdentifier: 
   displayName: Poem
-  icon: {fileID: 21300000, guid: 7901c3445b997d5429d8eae6b3fc4be3, type: 3}
+  icon: {fileID: 21300000, guid: 15681e27ba5d77547a23ea90c9a6820a, type: 3}
   prefab: {fileID: 7917558766831266416, guid: 72a55294d8a08a64c8c894408a3cef0f, type: 3}

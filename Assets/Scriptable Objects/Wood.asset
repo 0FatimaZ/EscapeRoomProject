@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Wood
   m_EditorClassIdentifier: 
   displayName: Wood
-  icon: {fileID: 21300000, guid: 3bc9baa904e1f3647b2499ccd8f31705, type: 3}
+  icon: {fileID: 21300000, guid: 2ffaae68cfea75848a60a1100c894538, type: 3}
   prefab: {fileID: 8092460260612017494, guid: 0089673a0994b0a40b93218ff5d5638e, type: 3}

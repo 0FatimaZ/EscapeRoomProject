@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Glass
   m_EditorClassIdentifier: 
   displayName: Glass
-  icon: {fileID: 21300000, guid: 1e011594073a5af409a6f8c7e8caad0c, type: 3}
+  icon: {fileID: 21300000, guid: f6e0cac7819c9cc4a91b3365946f96a5, type: 3}
   prefab: {fileID: 3446316082329688152, guid: ebeaaa0bce5eaab468a477c55871d4ad, type: 3}

@@ -11,7 +11,7 @@ public class Collector : MonoBehaviour
         if(collectible != null)
         {
             collectible.Collect();
-            Debug.Log("Collided with item");
+            //Debug.Log("Collided with item");
         }
     }
 

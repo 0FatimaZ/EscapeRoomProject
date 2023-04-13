@@ -34,14 +34,14 @@ public class Inventory : MonoBehaviour
         if(itemDictionary.TryGetValue(itemData, out InventoryItem item))
         {
             item.AddToStack();
-            Debug.Log("item increased w 1");
+            //Debug.Log("item increased w 1");
         }
         else
         {
             InventoryItem newItem = new InventoryItem(itemData);
             inventory.Add(newItem);
             itemDictionary.Add(itemData, newItem);
-            Debug.Log("item added");
+            //Debug.Log("item added");
             OnInventoryChange?.Invoke(inventory);
 
         }

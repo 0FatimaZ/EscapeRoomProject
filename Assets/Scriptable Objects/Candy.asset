@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: Candy
   m_EditorClassIdentifier: 
   displayName: Candy
-  icon: {fileID: 21300000, guid: 5bd4657fb2cf32e46b6ba06eefbd739a, type: 3}
+  icon: {fileID: 21300000, guid: 85027007731f97745a4cfe777495de68, type: 3}
   prefab: {fileID: 2369244899059787320, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
