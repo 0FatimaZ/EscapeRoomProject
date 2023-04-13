@@ -12,6 +12,7 @@ public class Inventory : MonoBehaviour
     
     
     public List<InventoryItem> inventory = new List<InventoryItem>();
+    private Dictionary<ItemData, InventoryItem> itemDictionary = new Dictionary<ItemData, InventoryItem>
     
 
 
@@ -26,8 +27,13 @@ public class Inventory : MonoBehaviour
      // PickUpObject.Collected -= Add;
     }
 
-    public void Add(ItemData itemdata)
+    public void Add(ItemData itemData)
     {
+        
+        if(itemDictionary.TryGetValue(itemData))
+        {
+
+        }
         InventoryItem newitem = gameObject.AddComponent<InventoryItem>();
         inventory.Add(newitem);
         OnInventoryChange?.Invoke(inventory);
