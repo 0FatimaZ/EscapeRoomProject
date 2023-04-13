@@ -3,46 +3,56 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class Calculator : MonoBehaviour
-{/*
-    [SerializeField] private TMP_Text Ans;
-    [SerializeField] private int maxLength = 4;
-    [SerializeField] private float displayTime = 2.0f;
-    [SerializeField] private GameObject uiImage;
-    [SerializeField] private Animator myAnimationController;
-    [SerializeField] private float delay = 4.0f;
-    [SerializeField] private AudioSource button;
+{
+    [SerializeField] TMP_Text codeText;
+	[SerializeField] private float delay = 0.5f;
+	string codeTextValue = "";
+	private int maxLength = 8;
 
-    private float timeLeft;
-    public static bool padlockUnlocked = true;
 
-    private void Update()
+	public void Number(string number)
     {
-        if (timeLeft > 0)
-        {
-            timeLeft -= Time.deltaTime;
-            if (timeLeft <= 0)
-            {
-                Ans.text = "";
-            }
-        }
-    }
+		if (codeTextValue == "ERROR") return;
 
-    public void Number(int number)
-    {
-        if (Ans.text.Length < maxLength)
-        {
-            Ans.text += number.ToString();
-            button.Play();
-        }
+		if(codeText.text.Length < maxLength)
+		{
+			codeTextValue += number.ToString();
+		}
+
     }
-        else
-        {
-            Ans.text = "Invalid";
-            timeLeft = displayTime;
-            wrong.Play();
-        }
- */
+	
+	public void DelAll()
+	{
+		codeTextValue = "";
+		codeText.text = "";
+	}
+
+	public void DelLast()
+	{
+		if (codeTextValue == "ERROR") return;
+		
+		if (codeText.text.Length > 0)
+		{
+		 	codeTextValue = codeTextValue.Remove(codeText.text.Length - 1);
+			if (codeText.text.Length <= 0)
+			{
+				DelAll();
+			}
+		}
+	}
+
+	public void Error()
+	{
+		codeTextValue = "ERROR";
+		codeText.text = "ERROR";
+		Invoke("DelAll", delay);
+	}
+
+	void Update () 
+	{
+		codeText.text = codeTextValue;
+	}
+
 }
