@@ -8,7 +8,7 @@ public class InventorySlot : MonoBehaviour
 {
     public Image ObjectIcon;
     public TextMeshProUGUI NameLabel;
-    public TextMeshProUGUI Stacksize;
+    public TextMeshProUGUI stackSize;
     
 
 
@@ -16,10 +16,15 @@ public class InventorySlot : MonoBehaviour
     {
         ObjectIcon.enabled = false;
         NameLabel.enabled = false;
-        Stacksize.enabled = false;
+        stackSize.enabled = false;
     }
 
-    public void DrawSlot(InventoryItem item)
+    public TextMeshProUGUI GetStackSize()
+    {
+        return stackSize;
+    }
+
+    public void DrawSlot(InventoryItem item, TextMeshProUGUI stackSize)
     {
         if(item == null)
         {
@@ -28,11 +33,12 @@ public class InventorySlot : MonoBehaviour
         }
         ObjectIcon.enabled = true;
         NameLabel.enabled = true;
-        Stacksize.enabled = true;
+        stackSize.enabled = true;
 
         ObjectIcon.sprite = item.itemData.icon;
         NameLabel.text = item.itemData.displayName;
-        Stacksize.text = item.stackSize.ToString();
+        stackSize.text = item.stackSize.ToString();
+        Debug.Log("stacksize: " + item.stackSize);
 
     }
 
