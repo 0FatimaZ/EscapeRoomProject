@@ -11,7 +11,6 @@ public class Calculator : MonoBehaviour
 	string codeTextValue = "";
 	private int maxLength = 8;
 
-
 	public void Number(string number)
     {
 		if (codeTextValue == "ERROR") return;
@@ -20,7 +19,6 @@ public class Calculator : MonoBehaviour
 		{
 			codeTextValue += number.ToString();
 		}
-
     }
 	
 	public void DelAll()

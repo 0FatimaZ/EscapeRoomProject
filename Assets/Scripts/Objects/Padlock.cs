@@ -3,7 +3,6 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
-using UnityEngine.SceneManagement;
 
 public class Padlock : MonoBehaviour
 {
@@ -12,24 +11,33 @@ public class Padlock : MonoBehaviour
 	string codeTextValue = "";
 	private int maxLength = 4;
     private string Answer = "5320";
-    public static bool padlockUnlocked = true;
+    public static bool padlockUnlocked = false;
+    Color initialFontColor;
+    int initialFontSize;
 
+    void Start()
+    {
+        Color newColor;
+        ColorUtility.TryParseHtmlString("#63672A", out newColor);
+        codeText.color = newColor;
+        codeText.fontSize = 54;
+        initialFontColor = codeText.color;
+        initialFontSize = (int)codeText.fontSize;
+    }
 
 	public void Number(string number)
     {
-		if (codeTextValue == "ERROR") return;
+		if (codeTextValue == "INVALID") return;
 
 		if(codeText.text.Length < maxLength)
 		{
 			codeTextValue += number.ToString();
 		}
-
     }
-	
 
 	public void DelLast()
 	{
-		if (codeTextValue == "ERROR") return;
+		if (codeTextValue == "INVALID") return;
 		
 		if (codeText.text.Length > 0)
 		{
@@ -37,30 +45,44 @@ public class Padlock : MonoBehaviour
 		}
 	}
 
+    public void DelAll()
+	{
+		codeTextValue = "";
+        codeText.text = "";
+        codeText.color = initialFontColor;
+        codeText.fontSize = initialFontSize;
+	}
 	
-     public void Execute()
+    public void Execute()
     {
-        if(Ans.text == Answer)
+        if(codeTextValue == Answer)
         {
-            Ans.text = "Correct";
-            padlockUnlocked = false;
-            door.Play();
-            myAnimationController.SetBool("open", false);
-            StartCoroutine(OpenDoorWithDelay());
+            codeTextValue = "CORRECT";
+            codeText.text = "CORRECT";
+            Color newColor;
+            ColorUtility.TryParseHtmlString("#3C8A01", out newColor);
+            codeText.color = newColor;
+            codeText.fontSize = 23;
+            padlockUnlocked = true;
+            //myAnimationController.SetBool("open", false);
         }
         else
-        {
-            codeTextValue = "ERROR";
-		    codeText.text = "ERROR";    
-            Ans.text = "Invalid";
-            timeLeft = displayTime;
-            wrong.Play();
+        {   
+            codeTextValue = "INVALID";
+            codeText.text = "INVALID";
+            Color newColor;
+            ColorUtility.TryParseHtmlString("#A21100", out newColor);
+            codeText.color = newColor;
+            codeText.fontSize = 23;
+            Invoke("DelAll", delay);
         }
+    }
 
 	void Update () 
 	{
 		codeText.text = codeTextValue;
 	}
+
 }
 
 
