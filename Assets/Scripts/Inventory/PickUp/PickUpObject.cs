@@ -12,7 +12,7 @@ public class PickUpObject : MonoBehaviour, ICollectible
     
     public void Collect()
     {
-        Debug.Log("Collided");
+        
         Destroy(gameObject);
         Collected?.Invoke(itemData);
     }

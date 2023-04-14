@@ -216,7 +216,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: Glass
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -316,7 +316,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: 1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -325,7 +325,7 @@ PrefabInstance:
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f6e0cac7819c9cc4a91b3365946f96a5, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -356,7 +356,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 1386036948}
   NameLabel: {fileID: 1386036946}
-  Stacksize: {fileID: 1386036944}
+  stackSize: {fileID: 1107928246}
 --- !u!1 &257418409
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +408,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: Poem
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -508,7 +508,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: 1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -517,7 +517,7 @@ PrefabInstance:
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 15681e27ba5d77547a23ea90c9a6820a, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -581,7 +581,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 372256450}
   NameLabel: {fileID: 372256452}
-  Stacksize: {fileID: 372256451}
+  stackSize: {fileID: 372256451}
 --- !u!1 &394494587
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,7 +811,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: Tongue
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -915,7 +915,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: 1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -924,7 +924,7 @@ PrefabInstance:
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 0f3b1da5e11dcb446ae3cbf60f863724, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -988,7 +988,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 646969883}
   NameLabel: {fileID: 646969885}
-  Stacksize: {fileID: 646969884}
+  stackSize: {fileID: 646969884}
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0
@@ -1447,7 +1447,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: Candy
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -1551,7 +1551,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: 1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -1560,7 +1560,7 @@ PrefabInstance:
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 85027007731f97745a4cfe777495de68, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1624,7 +1624,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 1073708131}
   NameLabel: {fileID: 1073708133}
-  Stacksize: {fileID: 1073708132}
+  stackSize: {fileID: 1073708132}
+--- !u!114 &1107928246 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
+  m_PrefabInstance: {fileID: 186341815}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &1147960585
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -1773,12 +1784,16 @@ PrefabInstance:
     m_TransformParent: {fileID: 1730854836}
     m_Modifications:
     - target: {fileID: 610280008832910257, guid: 15b776a38b365c643844b99aefd43358, type: 3}
+      propertyPath: m_SizeDelta.x
+      value: 250
+      objectReference: {fileID: 0}
+    - target: {fileID: 610280008832910257, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_AnchoredPosition.x
       value: 3.5
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: Calculator
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -1882,7 +1897,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: 1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -1891,7 +1906,7 @@ PrefabInstance:
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f38e01ab644faea44b757881f774ee99, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -1955,7 +1970,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 1171021466}
   NameLabel: {fileID: 1171021468}
-  Stacksize: {fileID: 1171021467}
+  stackSize: {fileID: 1171021467}
 --- !u!114 &1187831975
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2007,7 +2022,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 610280008317019637}
   NameLabel: {fileID: 1631594054}
-  Stacksize: {fileID: 610280008317019638}
+  stackSize: {fileID: 610280008317019638}
 --- !u!65 &1285580311
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -2030,7 +2045,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: Wood
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -2130,7 +2145,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: 6
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -2139,7 +2154,7 @@ PrefabInstance:
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 2ffaae68cfea75848a60a1100c894538, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2208,7 +2223,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 1386036948}
   NameLabel: {fileID: 1386036946}
-  Stacksize: {fileID: 1386036944}
+  stackSize: {fileID: 1386036944}
 --- !u!114 &1386036951
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2223,7 +2238,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 1386036948}
   NameLabel: {fileID: 1386036946}
-  Stacksize: {fileID: 1386036944}
+  stackSize: {fileID: 0}
 --- !u!1 &1566239870
 GameObject:
   m_ObjectHideFlags: 0
@@ -2264,7 +2279,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: Colors
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -2368,7 +2383,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: 1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -2377,7 +2392,7 @@ PrefabInstance:
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 99a52666008ffa6479d67c4f003d64af, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2441,7 +2456,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 1572814953}
   NameLabel: {fileID: 1572814955}
-  Stacksize: {fileID: 1572814954}
+  stackSize: {fileID: 1572814954}
 --- !u!1 &1590980598
 GameObject:
   m_ObjectHideFlags: 0
@@ -2512,7 +2527,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: Key
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -2612,7 +2627,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: 8
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -2621,7 +2636,7 @@ PrefabInstance:
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: 69a74c918770637409cf9f9e4bb86b9e, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
       value: 0
@@ -2685,7 +2700,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   ObjectIcon: {fileID: 1658291935}
   NameLabel: {fileID: 1658291937}
-  Stacksize: {fileID: 1658291936}
+  stackSize: {fileID: 1658291936}
 --- !u!1 &1730854835
 GameObject:
   m_ObjectHideFlags: 0
@@ -2732,7 +2747,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 0, y: 184}
+  m_AnchoredPosition: {x: 0, y: 158}
   m_SizeDelta: {x: 405, y: 200}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1730854837
@@ -4549,7 +4564,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: Teddy
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 610280008832910258, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -4649,7 +4664,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_text
-      value: 1
+      value: 
       objectReference: {fileID: 0}
     - target: {fileID: 5851266750127156898, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
@@ -4662,7 +4677,7 @@ PrefabInstance:
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: f32d495a8dd4ccb4e8d37b2f1bf2d843, type: 3}
+      objectReference: {fileID: 0}
     - target: {fileID: 7537213926956269259, guid: 15b776a38b365c643844b99aefd43358, type: 3}
       propertyPath: m_Enabled
       value: 0

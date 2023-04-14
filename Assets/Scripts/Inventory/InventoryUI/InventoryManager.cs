@@ -6,7 +6,7 @@ using UnityEngine;
 public class InventoryManager : MonoBehaviour
 {
     public GameObject SlotPrefab;
-    public List<InventorySlot> InventorySlots = new List<InventorySlot>(9);
+    public List<InventorySlot> InventorySlots = new List<InventorySlot>(10);
    
    
 
@@ -22,46 +22,91 @@ public class InventoryManager : MonoBehaviour
 
 
 
+    // CRASHES THE GAME
+    //void ResetInventory()
+    //{
+    //    for(int i = 0; i < transform.childCount; i++)
+    //    {
+    //        Destroy(transform.GetChild(0).gameObject);
+    //    }
+    //    //foreach(Transform childTransform in transform)
+    //    //{
+    //    //    Destroy(childTransform.gameObject);
+    //    //}
+    //    InventorySlots = new List<InventorySlot>(10);
 
-    void ResetInventory()
-    {
-        foreach(Transform childTransform in transform)
-        {
-            Destroy(childTransform.gameObject);
-        }
-        InventorySlots = new List<InventorySlot>(9);
-
-    }
+    //}
 
     void DrawInventory(List<InventoryItem> inventory) 
     //ArgumentOutOfRangeException: Index was out of range. Must be non-negative and less than the size of the collection.
 
     {
-        ResetInventory();
 
-        for(int i = 0; i < InventorySlots.Capacity; i++)
+        //ResetInventory();
+
+        // create new slots until the InventorySlots list has the same count as the inventory list
+        while (InventorySlots.Count < inventory.Count)
         {
             CreateInventorySlot();
         }
 
-        for (int i = 0; i < InventorySlots.Count; i++)
+        for (int i = 0; i < inventory.Count; i++)
         {
-            InventorySlots[i].DrawSlot(inventory[i]);
+            InventorySlots[i].DrawSlot(inventory[i], InventorySlots[i].GetStackSize());
         }
+
+
+
+        //ResetInventory();
+
+        //for(int i = 0; i < InventorySlots.Capacity; i++)
+        //{
+        //    CreateInventorySlot();
+        //}
+
+        //for (int i = 0; i < inventory.Count; i++)
+        //{
+        //    InventorySlots[i].DrawSlot(inventory[i]);
+        //}
 
     }
 
     void CreateInventorySlot()
     //MissingReferenceException: The object of type 'GameObject' has been destroyed but you are still trying to access it.
     {
+
+
+        if (SlotPrefab == null) return; // add null check here
+
         GameObject newslot = Instantiate(SlotPrefab);
+        if (newslot == null) return; // add null check here
+
         newslot.transform.SetParent(transform, false);
 
         InventorySlot newslotComponent = newslot.GetComponent<InventorySlot>();
-        newslotComponent.ClearSlot();
 
-        InventorySlots.Add(newslotComponent);
+        if (newslotComponent != null)
+        {
+            newslotComponent.ClearSlot();
+            InventorySlots.Add(newslotComponent);
+        }
+        
 
 
     }
+
+
+
+
+
+    //GameObject newslot = Instantiate(SlotPrefab);
+    //newslot.transform.SetParent(transform, false);
+
+    //InventorySlot newslotComponent = newslot.GetComponent<InventorySlot>();
+
+    //if (newslotComponent != null)
+    //{
+    //    newslotComponent.ClearSlot();
+    //    InventorySlots.Add(newslotComponent);
+    //}
 }
