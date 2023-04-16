@@ -17,6 +17,7 @@ public class Inventory : MonoBehaviour
     
 
 
+    
 
     private void OnEnable()
     {
@@ -27,6 +28,9 @@ public class Inventory : MonoBehaviour
     {
         PickUpObject.Collected -= Add;
     }
+
+
+    
 
     public void Add(ItemData itemData)
     {
@@ -50,7 +54,8 @@ public class Inventory : MonoBehaviour
 
     public void Remove(ItemData itemData)
     {
-       if (itemDictionary.TryGetValue(itemData, out InventoryItem item))
+        
+        if (itemDictionary.TryGetValue(itemData, out InventoryItem item))
         {
             item.RemoveFromStack();
             if(item.stackSize == 0)
