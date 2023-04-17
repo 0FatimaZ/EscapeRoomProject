@@ -51,16 +51,15 @@ public class InventorySlot : MonoBehaviour
 
     }
 
-    public void RemoveItem()
+    public void RemoveItem() //RELEVANT
     {
         
         
-        if(item.stackSize == 1)
+        if(item.stackSize == 0)
         {
             ClearSlot();
+            Inventory.Remove(item);
 
-            Vector3 spawnPosition = Camera.main.transform.position + Camera.main.transform.forward * 2f;
-            Instantiate(item.itemData.prefab, spawnPosition, Quaternion.identity);
         }
         else
         {

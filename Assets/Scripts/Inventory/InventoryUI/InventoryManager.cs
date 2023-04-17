@@ -12,10 +12,7 @@ public class InventoryManager : MonoBehaviour
     public List<InventorySlot> InventorySlots = new List<InventorySlot>(10);
     public GameObject InventoryBar;
 
-    private void Start()
-    {
-        Debug.Log(SlotPrefab);
-    }
+    
 
     private void OnEnable()
     {
@@ -61,36 +58,14 @@ public class InventoryManager : MonoBehaviour
         if (newslotComponent != null)
         {
             newslotComponent.ClearSlot();
-            newslotComponent.RemoveButton.onClick.AddListener(newslotComponent.RemoveItem);
+            newslotComponent.RemoveButton.onClick.AddListener(newslotComponent.RemoveItem); //RELEVANT
             InventorySlots.Add(newslotComponent);
         }
 
 
     }
 
-    //private void Update()
-    //{
-    //    if (.ItemData != null)
-    //    {
-    //        transform.position = MouseButton.current.position.ReadValue()
-    //    }
-    //}
-
-
-
-
-
-    //GameObject newslot = Instantiate(SlotPrefab);
-    //newslot.transform.SetParent(transform, false);
-
-    //InventorySlot newslotComponent = newslot.GetComponent<InventorySlot>();
-
-    //if (newslotComponent != null)
-    //{
-    //    newslotComponent.ClearSlot();
-    //    InventorySlots.Add(newslotComponent);
-    //}
-
+    
     // CRASHES THE GAME
     //void ResetInventory()
     //{

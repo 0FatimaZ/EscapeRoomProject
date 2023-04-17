@@ -101,14 +101,14 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.I))
         {
-            Debug.Log("I keycode detected");
+            
             InventoryBar.SetActive(true);
             InventoryBar.GetComponent<InventoryManager>().DrawInventory(inventory.inventory);
         }
 
         if (Input.GetKeyDown(KeyCode.C))
         {
-            Debug.Log("I keycode detected");
+            
             InventoryBar.SetActive(false);
             InventoryBar.GetComponent<InventoryManager>().DrawInventory(inventory.inventory);
         }
