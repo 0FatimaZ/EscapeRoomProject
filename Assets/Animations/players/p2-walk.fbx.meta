@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 50fcb865296ae47c7a729d7206deb324
+guid: ba4e35d81e51d6548b1b4ebc3bd5f232
 ModelImporter:
   serializedVersion: 21300
   internalIDToNameTable: []
@@ -36,8 +36,8 @@ ModelImporter:
       name: Armature|ArmatureAction
       takeName: Armature|ArmatureAction
       internalID: 4781951162920444690
-      firstFrame: 0
-      lastFrame: 140
+      firstFrame: 20
+      lastFrame: 56
       wrapMode: 0
       orientationOffsetY: 0
       level: 0
