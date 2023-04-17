@@ -16,9 +16,12 @@ public class CameraScript : MonoBehaviour
 
 {
     [Header("Camera Rotation")]
-    public float mouseSensitivity = 100;
+    public float mouseSensitivity = 5.0f;
+    public float mousesmoothing = 2.0f;
     public Transform playerbody;
     float xRotation = 0;
+
+    
 
     [Header("Subtitles")]
     public GameObject start_vc;
@@ -32,10 +35,7 @@ public class CameraScript : MonoBehaviour
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
-        //subtitleGO = game.subtitles;
-        //subtitles = game.subtitles.GetComponentInChildren<TextMeshProUGUI>();
-        //start_vc.SetActive(true);
-        //StartSubtitles();
+        
     }
 
     // Update is called once per frame
@@ -50,6 +50,7 @@ public class CameraScript : MonoBehaviour
         transform.localRotation = Quaternion.Euler(xRotation, 90, 0);
         playerbody.Rotate(Vector3.up * mouseX);
 
+        
     }
 
     IEnumerator Start_message()

@@ -7,7 +7,7 @@ using System;
 public class InventoryItem
 {
     public ItemData itemData;
-    public int stackSize;
+    public int stackSize = 0;
 
     public InventoryItem(ItemData item)
     {

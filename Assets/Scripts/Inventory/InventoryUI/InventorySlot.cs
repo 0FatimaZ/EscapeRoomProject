@@ -10,8 +10,8 @@ public class InventorySlot : MonoBehaviour
     public Image ObjectIcon;
     public TextMeshProUGUI NameLabel;
     public TextMeshProUGUI stackSize;
-    //public GameObject Item3D;
-    //public Button RemoveButton;
+    public GameObject Item3D;
+    public Button RemoveButton;
 
 
     private InventoryItem item;
@@ -21,7 +21,7 @@ public class InventorySlot : MonoBehaviour
         ObjectIcon.enabled = false;
         NameLabel.enabled = false;
         stackSize.enabled = false;
-        //RemoveButton.enabled = false;
+        RemoveButton.enabled = false;
         
     }
 
@@ -37,10 +37,12 @@ public class InventorySlot : MonoBehaviour
             ClearSlot();
             return; 
         }
+
+        
         ObjectIcon.enabled = true;
         NameLabel.enabled = true;
         stackSize.enabled = true;
-        //RemoveButton.enabled = true;
+        RemoveButton.enabled = true;
 
         ObjectIcon.sprite = item.itemData.icon;
         NameLabel.text = item.itemData.displayName;
@@ -49,14 +51,25 @@ public class InventorySlot : MonoBehaviour
 
     }
 
-    //public void RemoveItem()
-    //{
-    //    ClearSlot();
+    public void RemoveItem()
+    {
+        
+        
+        if(item.stackSize == 1)
+        {
+            ClearSlot();
 
-    //    // Place the 3D object in front of the player
-    //    Vector3 spawnPosition = Camera.main.transform.position + Camera.main.transform.forward * 2f;
-    //    Instantiate(item.itemData.prefab, spawnPosition, Quaternion.identity);
-    //}
+            Vector3 spawnPosition = Camera.main.transform.position + Camera.main.transform.forward * 2f;
+            Instantiate(item.itemData.prefab, spawnPosition, Quaternion.identity);
+        }
+        else
+        {
+            item.stackSize--;
+            Vector3 spawnPosition = Camera.main.transform.position + Camera.main.transform.forward * 2f;
+            Instantiate(item.itemData.prefab, spawnPosition, Quaternion.identity);
+        }
+
+    }
 
 
 }

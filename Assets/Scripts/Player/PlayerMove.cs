@@ -16,9 +16,11 @@ public class PlayerMove : MonoBehaviour
     public float currentVelY = 0;
     public CharacterController controller;
 
-    [Header("Cutscenes")]
-    Vector3 Startpoint;
-    public int cutscene;
+    public Vector3 Startpoint { get; private set; }
+
+    //[Header("Cutscenes")]
+    //Vector3 Startpoint;
+    //public int cutscene;
 
     [Header("Animation")]
     public Animator animator;
@@ -26,10 +28,14 @@ public class PlayerMove : MonoBehaviour
     [Header("Objects")]
     public GameObject door;
     public GameObject knife;
+    public GameObject InventoryBar;
+    public Inventory inventory;
+    public Camera mainCamera;
 
     [Header("Booleans")]
     public bool Door = false;
     public bool Knife = false;
+    private bool isCursorLocked = true;
 
 
     // Start is called before the first frame update
@@ -91,6 +97,30 @@ public class PlayerMove : MonoBehaviour
                 door.transform.GetComponent<Door>().OpenorClose();
             }
 
+        }
+
+        if (Input.GetKeyDown(KeyCode.I))
+        {
+            Debug.Log("I keycode detected");
+            InventoryBar.SetActive(true);
+            InventoryBar.GetComponent<InventoryManager>().DrawInventory(inventory.inventory);
+        }
+
+        if (Input.GetKeyDown(KeyCode.C))
+        {
+            Debug.Log("I keycode detected");
+            InventoryBar.SetActive(false);
+            InventoryBar.GetComponent<InventoryManager>().DrawInventory(inventory.inventory);
+        }
+
+        if (Input.GetKeyDown(KeyCode.Tab))
+        {
+            isCursorLocked = !isCursorLocked;
+
+            Cursor.lockState = isCursorLocked ? CursorLockMode.Locked : CursorLockMode.None;
+            Cursor.visible = !isCursorLocked;
+
+            mainCamera.GetComponent<CameraScript>().enabled = isCursorLocked;
         }
 
     }
