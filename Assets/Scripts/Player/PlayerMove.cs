@@ -35,6 +35,7 @@ public class PlayerMove : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+
         controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Startpoint = transform.position;
@@ -80,11 +81,11 @@ public class PlayerMove : MonoBehaviour
         controller.Move(movement * movementSpeed * Time.deltaTime);
         controller.Move(new Vector3(0, currentVelY * Time.deltaTime, 0));
 
-        //animator.SetFloat("Velocity", Mathf.Abs(inputY + inputX));
+        animator.SetFloat("Velocity", Mathf.Abs(inputY + inputX));
 
         if (Input.GetKeyDown("e"))
         {
-            //bool, skal være sand
+            //bool, skal vï¿½re sand
             if (Door == true)
             {
                 door.transform.GetComponent<Door>().OpenorClose();
