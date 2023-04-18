@@ -8,24 +8,14 @@ public class Inventory : MonoBehaviour
 {
 
     public static event Action<List<InventoryItem>> OnInventoryChange;
-    public static Inventory instance;
+ 
 
 
     public List<InventoryItem> inventory = new List<InventoryItem>();
     private Dictionary<ItemData, InventoryItem> itemDictionary = new Dictionary<ItemData, InventoryItem>();
 
 
-    private void Awake()
-    {
-        if (instance == null)
-        {
-            instance = this;
-        }
-        else
-        {
-            Destroy(gameObject);
-        }
-    }
+    
 
 
     private void OnEnable()
@@ -75,14 +65,14 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public List<InventoryItem> GetInventory()
-    {
-        return inventory;
-    }
+    //public List<InventoryItem> GetInventory()
+    //{
+    //    return inventory;
+    //}
 
-    internal static void Remove(InventoryItem item)
-    {
-        throw new NotImplementedException();
-    }
+    //internal static void Remove(InventoryItem item)
+    //{
+    //    throw new NotImplementedException();
+    //}
 }
 
