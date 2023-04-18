@@ -13,13 +13,18 @@ using TMPro;
 public class MyRelay : MonoBehaviour
 {
     public TextMeshProUGUI outputText;
+    public TextMeshProUGUI inputText;
     public Button hostButton;
     public Button clientButton;
+    public Button sendCode;
+    private string joinCode;
 
     private void Start()
     {
         hostButton.onClick.AddListener(OnHostButtonClick);
         clientButton.onClick.AddListener(OnClientButtonClick);
+        sendCode.onClick.AddListener(() => JoinRelayWithCode(outputText.text));
+        InitializeRelay();
     }
 
     private async void InitializeRelay()
@@ -27,7 +32,6 @@ public class MyRelay : MonoBehaviour
         await UnityServices.InitializeAsync();
         Debug.Log("Signed in " + AuthenticationService.Instance.PlayerId);
         await AuthenticationService.Instance.SignInAnonymouslyAsync();
-        CreateRelay();
     }
 
     private async void CreateRelay()
@@ -37,6 +41,7 @@ public class MyRelay : MonoBehaviour
             Allocation allocation = await RelayService.Instance.CreateAllocationAsync(2);
             string joinCode = await RelayService.Instance.GetJoinCodeAsync(allocation.AllocationId);
             Debug.Log(joinCode);
+            outputText.text = "join code :" + joinCode;
 
             NetworkManager.Singleton.GetComponent<UnityTransport>().SetHostRelayData(
                 allocation.RelayServer.IpV4,
@@ -47,7 +52,7 @@ public class MyRelay : MonoBehaviour
             );
 
             NetworkManager.Singleton.StartHost();
-            //outputText.text = "Join code: " + joinCode;
+            outputText.text = "Join code: " + joinCode;
         }
         catch (RelayServiceException e)
         {
@@ -55,12 +60,12 @@ public class MyRelay : MonoBehaviour
         }
     }
 
-    private async void JoinRelayWithCode(string joinCode)
+    public async void JoinRelayWithCode(string joinCode)
     {
         try
         {
             Debug.Log("Joining Relay with " + joinCode);
-            JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCode);
+            JoinAllocation joinAllocation = await RelayService.Instance.JoinAllocationAsync(joinCode.Substring(0, 6));
            outputText.text = "Join code: " + joinCode;
 
 
@@ -84,12 +89,12 @@ public class MyRelay : MonoBehaviour
 
     private void OnHostButtonClick()
     {
-        InitializeRelay();
+        CreateRelay();
     }
 
     private void OnClientButtonClick()
     {
 
-        JoinRelayWithCode("joinCode");
+        JoinRelayWithCode(inputText.text);
     }
 }
