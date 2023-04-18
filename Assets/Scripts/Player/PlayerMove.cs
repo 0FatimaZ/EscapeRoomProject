@@ -101,7 +101,6 @@ public class PlayerMove : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.I))
         {
-            
             InventoryBar.SetActive(true);
             InventoryBar.GetComponent<InventoryManager>().DrawInventory(inventory.inventory);
         }

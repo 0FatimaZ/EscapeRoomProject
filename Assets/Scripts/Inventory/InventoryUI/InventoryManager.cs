@@ -11,8 +11,9 @@ public class InventoryManager : MonoBehaviour
     public GameObject SlotPrefab;
     public List<InventorySlot> InventorySlots = new List<InventorySlot>(10);
     public GameObject InventoryBar;
+   
 
-    
+
 
     private void OnEnable()
     {
@@ -58,8 +59,8 @@ public class InventoryManager : MonoBehaviour
         if (newslotComponent != null)
         {
             newslotComponent.ClearSlot();
-            newslotComponent.RemoveButton.onClick.AddListener(newslotComponent.RemoveItem); //RELEVANT
             InventorySlots.Add(newslotComponent);
+            
         }
 
 
