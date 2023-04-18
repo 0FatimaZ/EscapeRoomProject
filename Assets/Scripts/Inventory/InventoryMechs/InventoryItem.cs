@@ -8,6 +8,7 @@ public class InventoryItem
 {
     public ItemData itemData;
     public int stackSize = 0;
+    public int objectCount = 1;
 
     public InventoryItem(ItemData item)
     {
@@ -24,6 +25,24 @@ public class InventoryItem
     public void RemoveFromStack()
     {
         stackSize--;
+        if (stackSize < 0)
+        {
+            stackSize = 0;
+        }
+    }
+
+    public void AddObject()
+    {
+        objectCount++;
+    }
+
+    public void RemoveObject()
+    {
+        objectCount--;
+        if (objectCount < 0)
+        {
+            objectCount = 0;
+        }
     }
 
 }

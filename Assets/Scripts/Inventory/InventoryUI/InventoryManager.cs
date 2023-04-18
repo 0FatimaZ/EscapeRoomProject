@@ -13,9 +13,23 @@ public class InventoryManager : MonoBehaviour
     public GameObject InventoryBar;
     public Button removebutton;
     public Inventory inventory;
-   
 
+    public Dictionary<ItemData, GameObject> iconToObjectPrefabMap = new Dictionary<ItemData, GameObject>();
 
+    // New method to instantiate 3D objects based on ItemData
+    public void Instantiate3DObject(ItemData itemData)
+    {
+        if (iconToObjectPrefabMap == null) return;
+
+        GameObject prefabToInstantiate = null;
+
+        // Find the 3D object prefab to instantiate based on the itemData's icon name
+        if (iconToObjectPrefabMap.TryGetValue(itemData, out prefabToInstantiate))
+        {
+            // Instantiate the 3D object in front of the player
+            Instantiate(prefabToInstantiate, Camera.main.transform.position + Camera.main.transform.forward, Quaternion.identity);
+        }
+    }
 
     private void OnEnable()
     {
@@ -27,19 +41,15 @@ public class InventoryManager : MonoBehaviour
         Inventory.OnInventoryChange -= DrawInventory;
     }
 
-
-   
     public void DrawInventory(List<InventoryItem> inventory)
     {
         int max = 10;
         while (InventorySlots.Count < inventory.Count && max > 0)
         {
-            
             max--;
             CreateInventorySlot();
         }
 
-        
         for (int i = 0; i < inventory.Count; i++)
         {
             InventorySlots[i].DrawSlot(inventory[i], InventorySlots[i].GetStackSize());
@@ -48,42 +58,23 @@ public class InventoryManager : MonoBehaviour
 
     void CreateInventorySlot()
     {
-        if (SlotPrefab == null) return; // add null check here
+        if (SlotPrefab == null) return;
 
         GameObject newslot = Instantiate(SlotPrefab);
-        if (newslot == null) return; // add null check here
+        if (newslot == null) return;
 
         newslot.GetComponent<InventorySlot>().inventory = inventory;
         newslot.transform.SetParent(transform, false);
 
         InventorySlot newslotComponent = newslot.GetComponent<InventorySlot>();
-        
 
         if (newslotComponent != null)
         {
             newslotComponent.ClearSlot();
             InventorySlots.Add(newslotComponent);
-            //removebutton.onClick.AddListener(() => newslotComponent.DecreaseStackSize());
 
+            // Set the inventoryManager field of the new InventorySlot instance
+            newslotComponent.inventoryManager = this;
         }
-
-
     }
-
-    
-    // CRASHES THE GAME
-    //void ResetInventory()
-    //{
-    //    for(int i = 0; i < transform.childCount; i++)
-    //    {
-    //        Destroy(transform.GetChild(0).gameObject);
-    //    }
-    //    //foreach(Transform childTransform in transform)
-    //    //{
-    //    //    Destroy(childTransform.gameObject);
-    //    //}
-    //    InventorySlots = new List<InventorySlot>(10);
-
-    //}
-
 }

@@ -12,19 +12,45 @@ public class InventorySlot : MonoBehaviour
     public TextMeshProUGUI stackSize;
     public Button removebutton;
     private InventoryItem item;
-    public GameObject itemPrefab;
     public ItemData itemData;
     public Inventory inventory;
+    public InventoryManager inventoryManager;
 
 
+    // New method to handle click events on inventory slots
+    public void OnClick()
+    {
+        if (item != null)
+        {
+            inventoryManager.Instantiate3DObject(item.itemData);
+        }
+    }
+
+
+    // New method to set the inventoryManager field
+    public void SetInventoryManager(InventoryManager manager)
+    {
+        inventoryManager = manager;
+    }
 
     public void ClearSlot()
     {
         ObjectIcon.enabled = false;
         NameLabel.enabled = false;
         stackSize.enabled = false;
-        
-        
+        removebutton.enabled = false;
+    }
+
+    public void DeleteSlot()
+    {
+        // Remove the current slot from the InventoryManager's InventorySlots list
+        if (inventoryManager != null)
+        {
+            inventoryManager.InventorySlots.Remove(this);
+        }
+
+        // Destroy this gameobject
+        Destroy(gameObject);
     }
 
     public TextMeshProUGUI GetStackSize()
@@ -34,49 +60,36 @@ public class InventorySlot : MonoBehaviour
 
     public void DrawSlot(InventoryItem item, TextMeshProUGUI stackSize)
     {
-        if(item == null)
+        if (item == null)
         {
             ClearSlot();
-            return; 
+            return;
         }
 
-        
+        this.item = item;
+        itemData = item.itemData;
+
         ObjectIcon.enabled = true;
         NameLabel.enabled = true;
         stackSize.enabled = true;
         removebutton.enabled = true;
-        
 
         ObjectIcon.sprite = item.itemData.icon;
         NameLabel.text = item.itemData.displayName;
         stackSize.text = item.stackSize.ToString();
-        
-
-    }
-
-
-    public void RemoveItem(InventoryItem item)
-    {
-        if (item != null)
-        {
-            Instantiate(itemPrefab, Camera.main.transform.position + Camera.main.transform.forward, Quaternion.identity);
-            inventory.Remove(item.itemData);
-        }
     }
 
     public void DecreaseStackSize()
     {
-        Debug.Log("Clicked a remove button");
+        
         item.stackSize--;
         DrawSlot(item, GetStackSize());
         if (item.stackSize <= 0)
         {
-            RemoveItem(item);
+            inventory.Remove(item.itemData);
+            DeleteSlot();
         }
     }
-
-    //void Start()
-    //{
-    //    removebutton.onClick.AddListener(() => RemoveItem(slot));
-    //}
 }
+
+    
