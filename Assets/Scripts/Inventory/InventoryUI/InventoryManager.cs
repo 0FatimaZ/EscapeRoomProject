@@ -11,6 +11,8 @@ public class InventoryManager : MonoBehaviour
     public GameObject SlotPrefab;
     public List<InventorySlot> InventorySlots = new List<InventorySlot>(10);
     public GameObject InventoryBar;
+    public Button removebutton;
+    public Inventory inventory;
    
 
 
@@ -51,6 +53,7 @@ public class InventoryManager : MonoBehaviour
         GameObject newslot = Instantiate(SlotPrefab);
         if (newslot == null) return; // add null check here
 
+        newslot.GetComponent<InventorySlot>().inventory = inventory;
         newslot.transform.SetParent(transform, false);
 
         InventorySlot newslotComponent = newslot.GetComponent<InventorySlot>();
@@ -60,7 +63,8 @@ public class InventoryManager : MonoBehaviour
         {
             newslotComponent.ClearSlot();
             InventorySlots.Add(newslotComponent);
-            
+            //removebutton.onClick.AddListener(() => newslotComponent.DecreaseStackSize());
+
         }
 
 
