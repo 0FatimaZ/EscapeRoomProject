@@ -1065,30 +1065,6 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.29999998, y: 0.29999995, z: 0.000000013326278}
   m_Center: {x: 0, y: 0, z: 0}
---- !u!1 &1696226430 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 5456149457253238078, guid: 40552f09ac255d34dbbb4852f5a11ff1, type: 3}
-  m_PrefabInstance: {fileID: 1924721300}
-  m_PrefabAsset: {fileID: 0}
---- !u!114 &1696226436
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1696226430}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 845fa76ed7855c9458192e1ba6c1e02c, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  ObjectIcon: {fileID: 0}
-  NameLabel: {fileID: 0}
-  stackSize: {fileID: 0}
-  removebutton: {fileID: 0}
-  itemData: {fileID: 0}
-  inventory: {fileID: 0}
-  inventoryManager: {fileID: 0}
 --- !u!1 &1730854835
 GameObject:
   m_ObjectHideFlags: 0
@@ -1204,7 +1180,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: e22ae4539abc278479a0ae80c578a6e5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  SlotPrefab: {fileID: 177159189010451522, guid: 09a68c01ebb318049a08d33bed875c9c, type: 3}
+  SlotPrefab: {fileID: 5071215028768974543, guid: 09a68c01ebb318049a08d33bed875c9c, type: 3}
   InventorySlots: []
   InventoryBar: {fileID: 1730854835}
   removebutton: {fileID: 0}
