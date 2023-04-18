@@ -46,9 +46,11 @@ public class Inventory : MonoBehaviour
             inventory.Add(newItem);
             itemDictionary.Add(itemData, newItem);
             OnInventoryChange?.Invoke(inventory);
+            newItem.originalPlacementPosition = transform.position;
 
         }
 
+        
     }
 
     public void Remove(ItemData itemData)
@@ -65,14 +67,5 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    //public List<InventoryItem> GetInventory()
-    //{
-    //    return inventory;
-    //}
-
-    //internal static void Remove(InventoryItem item)
-    //{
-    //    throw new NotImplementedException();
-    //}
 }
 

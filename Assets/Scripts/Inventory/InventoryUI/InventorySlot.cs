@@ -22,18 +22,16 @@ public class InventorySlot : MonoBehaviour
     {
         if (item != null)
         {
-            inventoryManager.Instantiate3DObject(item.itemData);
+            inventoryManager.Instantiate3DObject(item.itemData, item.originalPlacementPosition);
             Debug.Log("Instantiated:" + (item.itemData));
         }
+
+        Debug.Log("Item is null");
     }
 
 
-    // New method to set the inventoryManager field
-    public void SetInventoryManager(InventoryManager manager)
-    {
-        inventoryManager = manager;
-    }
 
+    //VIRKER
     public void ClearSlot()
     {
         ObjectIcon.enabled = false;
@@ -42,15 +40,14 @@ public class InventorySlot : MonoBehaviour
         removebutton.enabled = false;
     }
 
+    //VIRKER
     public void DeleteSlot()
     {
-        // Remove the current slot from the InventoryManager's InventorySlots list
         if (inventoryManager != null)
         {
             inventoryManager.InventorySlots.Remove(this);
         }
 
-        // Destroy this gameobject
         Destroy(gameObject);
     }
 
@@ -59,6 +56,7 @@ public class InventorySlot : MonoBehaviour
         return stackSize;
     }
 
+    //VIRKER
     public void DrawSlot(InventoryItem item, TextMeshProUGUI stackSize)
     {
         if (item == null)
@@ -80,6 +78,7 @@ public class InventorySlot : MonoBehaviour
         stackSize.text = item.stackSize.ToString();
     }
 
+    //VIRKER
     public void DecreaseStackSize()
     {
         

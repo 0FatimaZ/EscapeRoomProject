@@ -17,20 +17,21 @@ public class InventoryManager : MonoBehaviour
     public Dictionary<ItemData, GameObject> iconToObjectPrefabMap = new Dictionary<ItemData, GameObject>();
 
     // New method to instantiate 3D objects based on ItemData
-    public void Instantiate3DObject(ItemData itemData)
+    public void Instantiate3DObject(ItemData itemData, Vector3 originalPlacementPosition)
     {
-        if (iconToObjectPrefabMap == null) return;
-            //Debug.Log("Icon to object prefab is not null");
-        
+        if (iconToObjectPrefabMap == null)
+        {
+            //return;
+            Debug.Log("Icon to object prefab is null");
+        }
 
-        GameObject prefabToInstantiate = null;
+        GameObject prefabToInstantiate;
 
         // Find the 3D object prefab to instantiate based on the itemData's icon name
         if (iconToObjectPrefabMap.TryGetValue(itemData, out prefabToInstantiate))
         {
             Debug.Log(prefabToInstantiate);
-            // Instantiate the 3D object in front of the player
-            Instantiate(prefabToInstantiate, Camera.main.transform.position + Camera.main.transform.forward, Quaternion.identity);
+            Instantiate(prefabToInstantiate, originalPlacementPosition, Quaternion.identity);
         }
     }
 
@@ -75,9 +76,6 @@ public class InventoryManager : MonoBehaviour
         {
             newslotComponent.ClearSlot();
             InventorySlots.Add(newslotComponent);
-
-            // Set the inventoryManager field of the new InventorySlot instance
-            newslotComponent.inventoryManager = this;
         }
     }
 }

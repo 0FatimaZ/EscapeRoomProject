@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using System;
+using static UnityEditor.Progress;
 
 [Serializable]
 public class InventoryItem
@@ -9,6 +10,7 @@ public class InventoryItem
     public ItemData itemData;
     public int stackSize = 0;
     public int objectCount = 1;
+    public Vector3 originalPlacementPosition;
 
     public InventoryItem(ItemData item)
     {
@@ -44,5 +46,7 @@ public class InventoryItem
             objectCount = 0;
         }
     }
+
+    
 
 }
