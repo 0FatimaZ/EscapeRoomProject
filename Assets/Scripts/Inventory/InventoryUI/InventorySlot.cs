@@ -23,6 +23,7 @@ public class InventorySlot : MonoBehaviour
         if (item != null)
         {
             inventoryManager.Instantiate3DObject(item.itemData);
+            Debug.Log("Instantiated:" + (item.itemData));
         }
     }
 

@@ -20,12 +20,15 @@ public class InventoryManager : MonoBehaviour
     public void Instantiate3DObject(ItemData itemData)
     {
         if (iconToObjectPrefabMap == null) return;
+            //Debug.Log("Icon to object prefab is not null");
+        
 
         GameObject prefabToInstantiate = null;
 
         // Find the 3D object prefab to instantiate based on the itemData's icon name
         if (iconToObjectPrefabMap.TryGetValue(itemData, out prefabToInstantiate))
         {
+            Debug.Log(prefabToInstantiate);
             // Instantiate the 3D object in front of the player
             Instantiate(prefabToInstantiate, Camera.main.transform.position + Camera.main.transform.forward, Quaternion.identity);
         }
