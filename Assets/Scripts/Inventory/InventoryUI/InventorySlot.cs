@@ -16,7 +16,7 @@ public class InventorySlot : MonoBehaviour
     public Inventory inventory;
     public InventoryManager inventoryManager;
     public Transform cameraUnity;
-    //private Transform originalParent;
+    public Transform cameraUnity2;
 
 
     //RELEVANT
@@ -25,12 +25,16 @@ public class InventorySlot : MonoBehaviour
     {
         if (item != null)
         {
-            inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity.position.x,cameraUnity.position.y,cameraUnity.position.z+50));
-            print(cameraUnity.position);
-            Debug.Log("Instantiated:" + (item.itemData));
+            if (cameraUnity)
+            {
+                inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity.position.x, cameraUnity.position.y, cameraUnity.position.z + 100));
+            }
+            else
+            {
+                inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity2.position.x, cameraUnity2.position.y, cameraUnity2.position.z + 100));
+            }
         }
 
-        Debug.Log("Item is null");
     }
 
 
@@ -38,6 +42,7 @@ public class InventorySlot : MonoBehaviour
     {
         inventoryManager = GameObject.FindGameObjectWithTag("inventoryManager").GetComponent<InventoryManager>();
         cameraUnity = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
+        cameraUnity2 = GameObject.FindGameObjectWithTag("MainCamera2").GetComponent<Transform>();
     }
     //VIRKER
     public void ClearSlot()
@@ -64,7 +69,7 @@ public class InventorySlot : MonoBehaviour
         return stackSize;
     }
 
-    //VIRKER
+    
     public void DrawSlot(InventoryItem item, TextMeshProUGUI stackSize)
     {
         if (item == null)
@@ -93,13 +98,17 @@ public class InventorySlot : MonoBehaviour
         item.stackSize--;
         DrawSlot(item, GetStackSize());
 
-        inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity.position);
-        
-        //item.originalPlacementPosition = transform.position;
-        item.collider.enabled = true;
+        if (cameraUnity)
+        {
+            inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity.position);
+        }
 
-        // Set the parent back to the original parent (if it had one)
-        //transform.parent = originalParent;
+        if (cameraUnity2)
+        {
+            inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity2.position);
+        }
+       
+        item.collider.enabled = true;
 
         if (item.stackSize <= 0)
         {

@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8455189991883796742}
   - component: {fileID: 5958871204201432524}
   - component: {fileID: 7126237030922938074}
+  - component: {fileID: 1100638553151889584}
   m_Layer: 0
   m_Name: Color_puzzle
   m_TagString: Untagged
@@ -97,3 +98,16 @@ BoxCollider:
   serializedVersion: 2
   m_Size: {x: 0.29999998, y: 0.29999995, z: 0.000000022683036}
   m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &1100638553151889584
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5310541904827687961}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0168f7c8413005b44beabbe1f8d91636, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  itemData: {fileID: 11400000, guid: 0104bb85150ae9c44b900a153ac86dd1, type: 2}
