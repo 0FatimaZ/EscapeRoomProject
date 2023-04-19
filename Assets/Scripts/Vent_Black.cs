@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 
-public class Vents : MonoBehaviour
+public class Vent_Black : MonoBehaviour
 {
     Vector3 Dropoff;
 
