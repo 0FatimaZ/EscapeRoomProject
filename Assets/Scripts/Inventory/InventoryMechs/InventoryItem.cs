@@ -4,6 +4,8 @@ using UnityEngine;
 using System;
 using static UnityEditor.Progress;
 using Unity.VisualScripting;
+using UnityEngine.UIElements;
+using Unity.Mathematics;
 
 [Serializable]
 public class InventoryItem
@@ -12,6 +14,8 @@ public class InventoryItem
     public int stackSize = 0;
     public int objectCount = 1;
     public Vector3 originalPlacementPosition;
+    public Scale originalsize;
+    public quaternion originalrotation;
     public Collider collider;
 
     public InventoryItem(ItemData item)

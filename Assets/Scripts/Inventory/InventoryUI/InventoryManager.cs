@@ -14,27 +14,40 @@ public class InventoryManager : MonoBehaviour
     public Button removebutton;
     public Inventory inventory;
 
-    public Dictionary<ItemData, GameObject> iconToObjectPrefabMap = new Dictionary<ItemData, GameObject>();
+
+    public List<ItemData> AllItems = new List<ItemData>();
+
+    [Serialize] public Dictionary<string, GameObject> iconToObjectPrefabMap = new Dictionary<string, GameObject>();
 
     // New method to instantiate 3D objects based on ItemData
 
     //RELEVANT
-    public void Instantiate3DObject(ItemData itemData, Vector3 originalPlacementPosition)
+    public void Instantiate3DObject(string itemDatadisplayName, Vector3 originalPlacementPosition)
     {
-        if (iconToObjectPrefabMap == null)
-        {
-            //return;
-            Debug.Log("Icon to object prefab is null");
-        }
+        print("Method accessed");
+        //if (iconToObjectPrefabMap == null)
+        //{
+        //    //return;
+        //    Debug.Log("Icon to object prefab is null");
+        //}
 
         GameObject prefabToInstantiate;
 
         // Find the 3D object prefab to instantiate based on the itemData's icon name
-        if (iconToObjectPrefabMap.TryGetValue(itemData, out prefabToInstantiate))
+        if (iconToObjectPrefabMap.TryGetValue(itemDatadisplayName, out prefabToInstantiate))
         {
             Debug.Log(prefabToInstantiate);
-            Instantiate(prefabToInstantiate, originalPlacementPosition, Quaternion.identity);
+            Instantiate(prefabToInstantiate, originalPlacementPosition, prefabToInstantiate.transform.rotation);
         }
+    }
+
+    private void Start()
+    {
+        for (int i = 0; i < AllItems.Count; i++)
+        {
+            iconToObjectPrefabMap.Add(AllItems[i].displayName, AllItems[i].prefab);
+        }
+        
     }
 
     private void OnEnable()

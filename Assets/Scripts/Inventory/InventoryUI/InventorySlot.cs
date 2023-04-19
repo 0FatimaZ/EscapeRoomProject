@@ -15,6 +15,7 @@ public class InventorySlot : MonoBehaviour
     public ItemData itemData;
     public Inventory inventory;
     public InventoryManager inventoryManager;
+    public Transform cameraUnity;
     //private Transform originalParent;
 
 
@@ -24,7 +25,8 @@ public class InventorySlot : MonoBehaviour
     {
         if (item != null)
         {
-            inventoryManager.Instantiate3DObject(item.itemData, item.originalPlacementPosition);
+            inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity.position.x,cameraUnity.position.y,cameraUnity.position.z+50));
+            print(cameraUnity.position);
             Debug.Log("Instantiated:" + (item.itemData));
         }
 
@@ -32,7 +34,11 @@ public class InventorySlot : MonoBehaviour
     }
 
 
-
+    private void Start()
+    {
+        inventoryManager = GameObject.FindGameObjectWithTag("inventoryManager").GetComponent<InventoryManager>();
+        cameraUnity = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
+    }
     //VIRKER
     public void ClearSlot()
     {
@@ -86,9 +92,10 @@ public class InventorySlot : MonoBehaviour
         
         item.stackSize--;
         DrawSlot(item, GetStackSize());
-        
-        item.originalPlacementPosition = transform.position;
 
+        inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity.position);
+        
+        //item.originalPlacementPosition = transform.position;
         item.collider.enabled = true;
 
         // Set the parent back to the original parent (if it had one)

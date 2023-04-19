@@ -23,6 +23,7 @@ TagManager:
   - Glass
   - Player1
   - Player2
+  - inventoryManager
   layers:
   - Default
   - TransparentFX
