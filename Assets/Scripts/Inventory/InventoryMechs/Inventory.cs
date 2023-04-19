@@ -63,6 +63,7 @@ public class Inventory : MonoBehaviour
             {
                 inventory.Remove(item);
                 itemDictionary.Remove(itemData);
+                
             }
         }
     }

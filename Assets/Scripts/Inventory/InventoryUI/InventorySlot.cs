@@ -15,8 +15,10 @@ public class InventorySlot : MonoBehaviour
     public ItemData itemData;
     public Inventory inventory;
     public InventoryManager inventoryManager;
+    //private Transform originalParent;
 
 
+    //RELEVANT
     // New method to handle click events on inventory slots
     public void OnClick()
     {
@@ -78,16 +80,25 @@ public class InventorySlot : MonoBehaviour
         stackSize.text = item.stackSize.ToString();
     }
 
-    //VIRKER
+    //VIRKER & RELEVANT
     public void DecreaseStackSize()
     {
         
         item.stackSize--;
         DrawSlot(item, GetStackSize());
+        
+        item.originalPlacementPosition = transform.position;
+
+        item.collider.enabled = true;
+
+        // Set the parent back to the original parent (if it had one)
+        //transform.parent = originalParent;
+
         if (item.stackSize <= 0)
         {
             inventory.Remove(item.itemData);
             DeleteSlot();
+
         }
     }
 }

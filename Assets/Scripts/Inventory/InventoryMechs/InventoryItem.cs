@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using System;
 using static UnityEditor.Progress;
+using Unity.VisualScripting;
 
 [Serializable]
 public class InventoryItem
@@ -11,10 +12,12 @@ public class InventoryItem
     public int stackSize = 0;
     public int objectCount = 1;
     public Vector3 originalPlacementPosition;
+    public Collider collider;
 
     public InventoryItem(ItemData item)
     {
         itemData = item;
+        collider = item.prefab.GetComponent<Collider>();
         AddToStack();
     }
 

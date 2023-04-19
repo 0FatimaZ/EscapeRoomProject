@@ -17,6 +17,8 @@ public class InventoryManager : MonoBehaviour
     public Dictionary<ItemData, GameObject> iconToObjectPrefabMap = new Dictionary<ItemData, GameObject>();
 
     // New method to instantiate 3D objects based on ItemData
+
+    //RELEVANT
     public void Instantiate3DObject(ItemData itemData, Vector3 originalPlacementPosition)
     {
         if (iconToObjectPrefabMap == null)
