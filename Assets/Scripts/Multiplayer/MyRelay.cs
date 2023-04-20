@@ -17,7 +17,7 @@ public class MyRelay : MonoBehaviour
     public Button hostButton;
     public Button clientButton;
     private string joinCode;
-    private int numPlayersJoined = 0;
+    
    
     
 

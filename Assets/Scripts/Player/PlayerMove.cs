@@ -6,6 +6,7 @@ using Unity.Netcode;
 
 public class PlayerMove : NetworkBehaviour
 {
+
     [Header("Ground Check")]
     public LayerMask groundMask;
     public Transform groundDetectionTransform;

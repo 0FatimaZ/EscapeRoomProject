@@ -14,8 +14,6 @@ public class Spawnpoints : MonoBehaviour {
 
     void Start() {
         hostButton.onClick.AddListener(SpawnHost);
-
-      
         clientButton.onClick.AddListener(SpawnClient);
     }
 
