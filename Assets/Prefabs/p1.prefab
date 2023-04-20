@@ -2560,9 +2560,7 @@ GameObject:
   - component: {fileID: 5318818167999235789}
   - component: {fileID: 904488301854456118}
   - component: {fileID: 3997073878405039823}
-  - component: {fileID: -3796357059024825854}
   - component: {fileID: 7173486428589703471}
-  - component: {fileID: 857437163805747137}
   m_Layer: 0
   m_Name: p1
   m_TagString: Player1
@@ -2668,32 +2666,6 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &-3796357059024825854
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9012453770551364725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df2868252ab5c4d1da357e8f11f1b524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 0
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!114 &7173486428589703471
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2710,23 +2682,6 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &857437163805747137
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9012453770551364725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21b76cd8d1bd0a64391b4a20e03dcebd, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  mouseSensitivity: 5
-  mousesmoothing: 2
-  playerbody: {fileID: 0}
-  start_vc: {fileID: 0}
-  subtitleText: []
 --- !u!1 &9082378902188089158
 GameObject:
   m_ObjectHideFlags: 0
