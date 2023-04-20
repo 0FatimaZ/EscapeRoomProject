@@ -24,12 +24,6 @@ public class InventoryManager : MonoBehaviour
     //RELEVANT
     public void Instantiate3DObject(string itemDatadisplayName, Vector3 originalPlacementPosition)
     {
-        print("Method accessed");
-        //if (iconToObjectPrefabMap == null)
-        //{
-        //    //return;
-        //    Debug.Log("Icon to object prefab is null");
-        //}
 
         GameObject prefabToInstantiate;
 
