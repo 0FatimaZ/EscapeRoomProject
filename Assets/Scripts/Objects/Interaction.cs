@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Interaction : MonoBehaviour
 {
-    /*
     public Image UI;
     public Image interactionText;
     public float interactionDistance = 1.0f;
@@ -48,5 +47,4 @@ public class Interaction : MonoBehaviour
             //interactionText.gameObject.SetActive(false);
         }
     }
-    */
 }

@@ -14,6 +14,10 @@ public class Padlock : MonoBehaviour
     public static bool padlockUnlocked = false;
     Color initialFontColor;
     int initialFontSize;
+    public GameObject knife;
+    public GameObject wall;
+    public Vector3 destination;
+    public float speed = 1f; 
 
     void Start()
     {
@@ -81,6 +85,12 @@ public class Padlock : MonoBehaviour
 	void Update () 
 	{
 		codeText.text = codeTextValue;
+
+        if (padlockUnlocked) 
+        {
+        wall.transform.position = Vector3.Lerp(wall.transform.position, destination, Time.deltaTime * speed);
+        knife.SetActive(true);
+        }
 	}
 
 }
