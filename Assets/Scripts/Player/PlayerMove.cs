@@ -39,15 +39,21 @@ public class PlayerMove : NetworkBehaviour
     public bool Knife = false;
     private bool isCursorLocked = true;
 
+    // Spawn manager
+    private PlayerSpawnManager spawnManager;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        if(!IsOwner) return;
         controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Startpoint = transform.position;
         animator = GetComponent<Animator>();
+        spawnManager = GameObject.Find("PlayerSpawnManager").GetComponent<PlayerSpawnManager>();
+        InventoryBar = spawnManager.InventoryBar;
+        inventory = spawnManager.inventory;
     }
 
     public void CheckIsGrounded()

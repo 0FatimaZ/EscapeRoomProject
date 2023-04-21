@@ -1051,7 +1051,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   mouseSensitivity: 150
   mousesmoothing: 2
-  playerbody: {fileID: 0}
+  playerbody: {fileID: 8527981891384006351}
   start_vc: {fileID: 0}
   subtitleText: []
 --- !u!81 &5413915367483922859
@@ -2616,18 +2616,18 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  groundDetectionTransform: {fileID: 0}
+  groundDetectionTransform: {fileID: 8202113914288226385}
   isGrounded: 1
-  movementSpeed: 5
+  movementSpeed: 2
   gravityFactor: -9.81
   currentVelY: 0
-  controller: {fileID: 0}
-  animator: {fileID: 0}
+  controller: {fileID: 904488301854456118}
+  animator: {fileID: 3997073878405039823}
   door: {fileID: 0}
   knife: {fileID: 0}
   InventoryBar: {fileID: 0}
   inventory: {fileID: 0}
-  mainCamera: {fileID: 0}
+  mainCamera: {fileID: 6929838184760083580}
   Door: 0
   Knife: 0
 --- !u!143 &904488301854456118
