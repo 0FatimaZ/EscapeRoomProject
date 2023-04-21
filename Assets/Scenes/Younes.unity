@@ -571,13 +571,14 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 589282457}
+  - component: {fileID: 589282458}
   m_Layer: 0
   m_Name: Spawnpointmanager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &589282457
 Transform:
   m_ObjectHideFlags: 0
@@ -593,6 +594,23 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &589282458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 589282456}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 66be20be7596e1548abc28ce7d4a8c36, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  hostSpawnPoint: {fileID: 2020545958}
+  clientSpawnPoint: {fileID: 383813907}
+  playerPrefab: {fileID: 6500365776762376224, guid: 22deeaf2588f7ce468fcb8ce7a7854a2, type: 3}
+  hostButton: {fileID: 534392079}
+  clientButton: {fileID: 1008045246}
 --- !u!1 &753008797
 GameObject:
   m_ObjectHideFlags: 0
@@ -610,7 +628,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!81 &753008798
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1126,7 +1144,7 @@ MonoBehaviour:
     NetworkPrefabs:
     - Override: 0
       Prefab: {fileID: 9012453770551364725, guid: 7348995e1812f9648a4d68163bf1a073, type: 3}
-      SourcePrefabToOverride: {fileID: 0}
+      SourcePrefabToOverride: {fileID: 6500365776762376224, guid: 22deeaf2588f7ce468fcb8ce7a7854a2, type: 3}
       SourceHashToOverride: 0
       OverridingTargetPrefab: {fileID: 0}
     TickRate: 30

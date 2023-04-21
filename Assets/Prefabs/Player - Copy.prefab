@@ -111,7 +111,7 @@ GameObject:
   - component: {fileID: 5879626816946770971}
   - component: {fileID: 5997405713163900865}
   m_Layer: 0
-  m_Name: Player
+  m_Name: Player - Copy
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -147,7 +147,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   GlobalObjectIdHash: 951099334
   AlwaysReplicateAsRoot: 0
-  DontDestroyWithOwner: 0
+  DontDestroyWithOwner: 1
   AutoObjectParentSync: 1
 --- !u!114 &5879626816946770971
 MonoBehaviour:
