@@ -4,18 +4,33 @@ using UnityEngine;
 
 public class Collector : MonoBehaviour
 {
+
+    public bool collecting;
+
+    ICollectible collectible;
+
+    private void Update()
+    {
+       if (collecting == true && Input.GetKeyDown(KeyCode.P))
+        {
+            collectible.Collect();
+        }
+    }
     private void OnCollisionEnter(Collision collision)
     {
-        ICollectible collectible = collision.transform.GetComponent<ICollectible>();
-        print("IsNull fungere ikke");
+        collectible = collision.transform.GetComponent<ICollectible>();
+        
         if (collectible != null)
         {
-            //if (Input.GetKeyDown(KeyCode.P))
-            {
-                collectible.Collect();
-            }
-
+            //collectible.Collect();
+            collecting = true;
+            print("Collectible is not null");
         }
+    }
+
+    private void OnCollisionExit(Collision collision)
+    {
+        collecting = false;
     }
 
 }

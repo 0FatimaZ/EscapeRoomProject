@@ -3,13 +3,11 @@ using System.Collections.Generic;
 using Unity.Burst.CompilerServices;
 using UnityEngine;
 
-public class Vent_Pink : MonoBehaviour
+public class Vent : MonoBehaviour
 {
     Vector3 Dropoff;
 
     public GameObject otherside;
-
-    public GameObject puzzle;
 
     
     void Start()
@@ -19,8 +17,9 @@ public class Vent_Pink : MonoBehaviour
 
     private void OnTriggerEnter(Collider hit)
     {
-        if (hit.transform.tag != "Tongue")
+        if (hit.transform.tag != "Player")
         {
+            print("dwqW");
             hit.gameObject.transform.position = Dropoff;
         }
     }

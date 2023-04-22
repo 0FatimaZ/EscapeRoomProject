@@ -29,11 +29,11 @@ public class InventorySlot : MonoBehaviour
         {
             if (cameraUnity)
             {
-                inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity.position.x, cameraUnity.position.y, cameraUnity.position.z + 100));
+                inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity.position.x, cameraUnity.position.y, cameraUnity.position.z * 2));
             }
             else
             {
-                inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity2.position.x, cameraUnity2.position.y, cameraUnity2.position.z + 100));
+                inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity2.position.x, cameraUnity2.position.y, cameraUnity2.position.z * 2));
             }
         }
         print("item = null");

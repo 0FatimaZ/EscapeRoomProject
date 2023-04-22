@@ -4,12 +4,6 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using TMPro;
 
-//[System.Serializable]
-/*public struct SubtitleText
-{
-    public float time;
-    public string text;
-}*/
 
 public class CameraScript : MonoBehaviour
 
@@ -23,15 +17,6 @@ public class CameraScript : MonoBehaviour
 
     
 
-    [Header("Subtitles")]
-    public GameObject start_vc;
-    GameObject subtitleGO;
-    TextMeshProUGUI subtitles;
-    public SubtitleText[] subtitleText;
-
-
-
-    // Start is called before the first frame update
     void Start()
     {
         Cursor.lockState = CursorLockMode.Locked;
@@ -53,26 +38,5 @@ public class CameraScript : MonoBehaviour
         
     }
 
-    IEnumerator Start_message()
-    {
-        yield return new WaitForSeconds(34);
-        start_vc.SetActive(false);
-    }
-
-    /*IEnumerator SubtitleCoroutine()
-    {
-        subtitleGO.SetActive(true);
-        foreach(var voiceLine in subtitleText)
-        {
-            subtitles.text = voiceLine.text;
-
-            yield return new WaitForSecondsRealtime(voiceLine.time);
-        }
-    }
-
-    void StartSubtitles()
-    {
-        StartCoroutine(SubtitleCoroutine());
-    }*/
    
 }

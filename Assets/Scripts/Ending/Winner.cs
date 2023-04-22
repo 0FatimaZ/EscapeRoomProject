@@ -18,11 +18,14 @@ public class Winner : MonoBehaviour
     public GameObject EndingCam2_2;
     public GameObject black;
     public GameObject Canvasend;
+    private CharacterController characterController;
+    private Transform playerTransform;
 
 
     void Start()
     {
-        
+        playerTransform = GameObject.FindWithTag("Player").transform;
+        characterController = playerTransform.GetComponent<CharacterController>();
     }
 
 // Update is called once per frame
@@ -33,7 +36,7 @@ void Update()
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.CompareTag("Player1"))
+        if (other.gameObject.layer == 3)
         {
             Canvasend.SetActive(true);
             audiosource.SetActive(false);
@@ -41,7 +44,7 @@ void Update()
             StartCoroutine(FinishCut());
         }
 
-        if (other.gameObject.CompareTag("Player2"))
+        if (other.gameObject.layer == 6)
         {
             Canvasend.SetActive(true);
             audiosource.SetActive(false);
