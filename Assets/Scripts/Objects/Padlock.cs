@@ -11,7 +11,7 @@ public class Padlock : MonoBehaviour
 	string codeTextValue = "";
 	private int maxLength = 4;
     private string Answer = "5320";
-    public bool padlockUnlocked = false; //der stod static her, ved ikke om det gør en forskel i koden
+    public bool padlockUnlocked = false;
     Color initialFontColor;
     int initialFontSize;
     public GameObject knife;
@@ -68,7 +68,6 @@ public class Padlock : MonoBehaviour
             codeText.color = newColor;
             codeText.fontSize = 23;
             padlockUnlocked = true;
-            //myAnimationController.SetBool("open", false);
         }
         else
         {   

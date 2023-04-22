@@ -5,7 +5,7 @@ using UnityEngine.UI;
 
 public class Interaction_pink : MonoBehaviour
 {
-    public Image UI;
+    public GameObject UI;
     public Image interactionText;
     public float interactionDistance = 1.0f;
     private Transform playerTransform;
