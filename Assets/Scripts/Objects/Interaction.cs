@@ -14,7 +14,7 @@ public class Interaction : MonoBehaviour
 
     private void Start()
     {
-        playerTransform = GameObject.FindWithTag("Player").transform;
+        playerTransform = GameObject.FindWithTag("Player1").transform;
         characterController = playerTransform.GetComponent<CharacterController>();
         interactionText.gameObject.SetActive(false);
         UI.gameObject.SetActive(false);

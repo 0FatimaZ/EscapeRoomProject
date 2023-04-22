@@ -14,11 +14,17 @@ public class PlayerSpawnManager : MonoBehaviour
         
     }
 
-public SpawnHost
+    /*public SpawnHost()
+    {
+
+    }
 
 
 
-public SpawnClient
+    public SpawnClient()
+    {
+
+    }*/
 
 
 
