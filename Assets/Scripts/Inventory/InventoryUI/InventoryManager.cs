@@ -27,6 +27,7 @@ public class InventoryManager : MonoBehaviour
         if (iconToObjectPrefabMap.TryGetValue(itemDatadisplayName, out prefabToInstantiate))
         {
             Instantiate(prefabToInstantiate, originalPlacementPosition, prefabToInstantiate.transform.rotation);
+            print("Instatiate metode fungerer");
         }
     }
 
@@ -36,6 +37,7 @@ public class InventoryManager : MonoBehaviour
         for (int i = 0; i < AllItems.Count; i++)
         {
             iconToObjectPrefabMap.Add(AllItems[i].displayName, AllItems[i].prefab);
+            print("Dictionary filled");
         }
         
     }

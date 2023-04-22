@@ -22,7 +22,9 @@ public class InventorySlot : MonoBehaviour
     //RELEVANT
     // OnClick for at fjerne og spawne objekt
     public void OnClick()
+       
     {
+        print("onclick accesed");
         if (item != null)
         {
             if (cameraUnity)
@@ -34,6 +36,7 @@ public class InventorySlot : MonoBehaviour
                 inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity2.position.x, cameraUnity2.position.y, cameraUnity2.position.z + 100));
             }
         }
+        print("item = null");
 
     }
 
@@ -98,15 +101,18 @@ public class InventorySlot : MonoBehaviour
         
         item.stackSize--;
         DrawSlot(item, GetStackSize());
+        print("Stacksize fjernes");
 
         if (cameraUnity)
         {
             inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity.position);
+            print("Yes cam 1");
         }
 
         if (cameraUnity2)
         {
             inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity2.position);
+            print("yes cam 2");
         }
        
         item.collider.enabled = true;

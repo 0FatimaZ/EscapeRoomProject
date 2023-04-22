@@ -10,7 +10,7 @@ public class Collector : MonoBehaviour
         print("IsNull fungere ikke");
         if (collectible != null)
         {
-            if (Input.GetKeyDown(KeyCode.P))
+            //if (Input.GetKeyDown(KeyCode.P))
             {
                 collectible.Collect();
             }
