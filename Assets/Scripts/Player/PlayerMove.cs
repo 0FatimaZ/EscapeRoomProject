@@ -42,6 +42,8 @@ public class PlayerMove : NetworkBehaviour
     // Spawn manager
     private PlayerSpawnManager spawnManager;
 
+    public PickUpObject pickup;
+
 
     // Start is called before the first frame update
     void Start()
@@ -130,6 +132,13 @@ public class PlayerMove : NetworkBehaviour
             mainCamera.GetComponent<CameraScript>().enabled = isCursorLocked;
         }
 
+        if (Input.GetKeyDown(KeyCode.P))
+        {
+            pickup.Collect();
+        }
+
+
+
     }
 
     void OnTriggerEnter(Collider other)
@@ -146,6 +155,20 @@ public class PlayerMove : NetworkBehaviour
 
 
     }
+
+    //private void OnCollisionEnter(Collision collision)
+    //{
+    //    ICollectible collectible = collision.transform.GetComponent<ICollectible>();
+    //    print("IsNull fungere ikke");
+    //    if (collectible != null)
+    //    {
+    //        //if (Input.GetKeyDown(KeyCode.P))
+    //        {
+    //            collectible.Collect();
+    //        }
+
+    //    }
+    //}
 
     private void OnTriggerExit(Collider other)
     {
