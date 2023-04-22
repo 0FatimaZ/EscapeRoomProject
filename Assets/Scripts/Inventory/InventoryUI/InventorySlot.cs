@@ -20,7 +20,7 @@ public class InventorySlot : MonoBehaviour
 
 
     //RELEVANT
-    // New method to handle click events on inventory slots
+    // OnClick for at fjerne og spawne objekt
     public void OnClick()
     {
         if (item != null)
@@ -37,14 +37,14 @@ public class InventorySlot : MonoBehaviour
 
     }
 
-
+    //At finde relevante tags
     private void Start()
     {
         inventoryManager = GameObject.FindGameObjectWithTag("inventoryManager").GetComponent<InventoryManager>();
         cameraUnity = GameObject.FindGameObjectWithTag("MainCamera").GetComponent<Transform>();
         cameraUnity2 = GameObject.FindGameObjectWithTag("MainCamera2").GetComponent<Transform>();
     }
-    //VIRKER
+    //At clear et slot
     public void ClearSlot()
     {
         ObjectIcon.enabled = false;
@@ -53,7 +53,7 @@ public class InventorySlot : MonoBehaviour
         removebutton.enabled = false;
     }
 
-    //VIRKER
+    //At slette et slot
     public void DeleteSlot()
     {
         if (inventoryManager != null)
@@ -70,6 +70,7 @@ public class InventorySlot : MonoBehaviour
     }
 
     
+    //At tegne slottet
     public void DrawSlot(InventoryItem item, TextMeshProUGUI stackSize)
     {
         if (item == null)
@@ -91,7 +92,7 @@ public class InventorySlot : MonoBehaviour
         stackSize.text = item.stackSize.ToString();
     }
 
-    //VIRKER & RELEVANT
+    //At fjerne fra slot og inventory og spawn objektet der fjernes
     public void DecreaseStackSize()
     {
         

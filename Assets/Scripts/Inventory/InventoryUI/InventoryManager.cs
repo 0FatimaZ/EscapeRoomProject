@@ -19,22 +19,18 @@ public class InventoryManager : MonoBehaviour
 
     [Serialize] public Dictionary<string, GameObject> iconToObjectPrefabMap = new Dictionary<string, GameObject>();
 
-    // New method to instantiate 3D objects based on ItemData
 
-    //RELEVANT
+    //At finde det objekt der skal spawnes
     public void Instantiate3DObject(string itemDatadisplayName, Vector3 originalPlacementPosition)
     {
-
         GameObject prefabToInstantiate;
-
-        // Find the 3D object prefab to instantiate based on the itemData's icon name
         if (iconToObjectPrefabMap.TryGetValue(itemDatadisplayName, out prefabToInstantiate))
         {
-            Debug.Log(prefabToInstantiate);
             Instantiate(prefabToInstantiate, originalPlacementPosition, prefabToInstantiate.transform.rotation);
         }
     }
 
+    //At udfylde dictionary med items navne og prefabs (listen er udfyldt i unity)
     private void Start()
     {
         for (int i = 0; i < AllItems.Count; i++)
@@ -44,6 +40,7 @@ public class InventoryManager : MonoBehaviour
         
     }
 
+    
     private void OnEnable()
     {
         Inventory.OnInventoryChange += DrawInventory;
@@ -53,6 +50,9 @@ public class InventoryManager : MonoBehaviour
     {
         Inventory.OnInventoryChange -= DrawInventory;
     }
+
+
+    //At tegne inventory UI
 
     public void DrawInventory(List<InventoryItem> inventory)
     {
@@ -69,6 +69,8 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
+    
+    //At oprette et inventory slot
     void CreateInventorySlot()
     {
         if (SlotPrefab == null) return;
