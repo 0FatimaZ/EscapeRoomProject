@@ -286,7 +286,7 @@ RectTransform:
   m_GameObject: {fileID: 257402691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6341138, y: 1.6341138, z: 1.6341138}
+  m_LocalScale: {x: 3.9308605, y: 3.9308605, z: 3.9308605}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 27212497}
@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.010040283, y: -82}
+  m_AnchoredPosition: {x: -0.0099792, y: -219.25}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257402693
@@ -419,7 +419,7 @@ RectTransform:
   m_GameObject: {fileID: 296476580}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.9672758, y: 0.9672758, z: 0.9672758}
+  m_LocalScale: {x: 2.326782, y: 2.326782, z: 2.326782}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1814170960}
@@ -427,7 +427,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.01004, y: 0}
+  m_AnchoredPosition: {x: -0.009979, y: -22}
   m_SizeDelta: {x: 825.52, y: 491}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296476582
@@ -715,7 +715,7 @@ RectTransform:
   m_GameObject: {fileID: 1695888035}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1.6341138, y: 1.6341138, z: 1.6341138}
+  m_LocalScale: {x: 3.9308605, y: 3.9308605, z: 3.9308605}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 633043451}
@@ -724,7 +724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.010040283, y: -146}
+  m_AnchoredPosition: {x: -0.0099792, y: -373.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1695888037
