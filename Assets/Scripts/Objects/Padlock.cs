@@ -11,9 +11,13 @@ public class Padlock : MonoBehaviour
 	string codeTextValue = "";
 	private int maxLength = 4;
     private string Answer = "5320";
-    public static bool padlockUnlocked = false;
+    public bool padlockUnlocked = false; //der stod static her, ved ikke om det gør en forskel i koden
     Color initialFontColor;
     int initialFontSize;
+    public GameObject knife;
+    public GameObject wall;
+    public Vector3 destination;
+    public float speed = 1f; 
 
     void Start()
     {
@@ -81,6 +85,12 @@ public class Padlock : MonoBehaviour
 	void Update () 
 	{
 		codeText.text = codeTextValue;
+
+        if (padlockUnlocked) 
+        {
+        wall.transform.position = Vector3.Lerp(wall.transform.position, destination, Time.deltaTime * speed);
+        knife.SetActive(true);
+        }
 	}
 
 }

@@ -1495,6 +1495,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 150
+  mousesmoothing: 2
   playerbody: {fileID: 4680352351850422148}
   start_vc: {fileID: 0}
   subtitleText: []
@@ -1551,6 +1552,7 @@ GameObject:
   - component: {fileID: 5150229938619254736}
   - component: {fileID: 5150229938619254738}
   - component: {fileID: 5150229938619254739}
+  - component: {fileID: 1158181298934576299}
   m_Layer: 0
   m_Name: p2
   m_TagString: Untagged
@@ -1636,10 +1638,12 @@ MonoBehaviour:
   gravityFactor: -9.81
   currentVelY: 0
   controller: {fileID: 5150229938619254737}
-  cutscene: 0
   animator: {fileID: 5150229938619254736}
   door: {fileID: 0}
   knife: {fileID: 0}
+  InventoryBar: {fileID: 0}
+  inventory: {fileID: 0}
+  mainCamera: {fileID: 0}
   Door: 0
   Knife: 0
 --- !u!114 &5150229938619254739
@@ -1654,6 +1658,22 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e709bdc277465c458c2f9055bb9d6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1158181298934576299
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5456149457253238078}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 951099334
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
 --- !u!1 &5656322118386789163
 GameObject:
   m_ObjectHideFlags: 0

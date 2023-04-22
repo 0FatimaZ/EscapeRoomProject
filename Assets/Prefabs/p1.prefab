@@ -1050,7 +1050,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mouseSensitivity: 150
-  playerbody: {fileID: 0}
+  mousesmoothing: 2
+  playerbody: {fileID: 8527981891384006351}
   start_vc: {fileID: 0}
   subtitleText: []
 --- !u!81 &5413915367483922859
@@ -2559,6 +2560,9 @@ GameObject:
   - component: {fileID: 5318818167999235789}
   - component: {fileID: 904488301854456118}
   - component: {fileID: 3997073878405039823}
+  - component: {fileID: 7173486428589703471}
+  - component: {fileID: -8046022929326520452}
+  - component: {fileID: 3531381766806434538}
   m_Layer: 0
   m_Name: p1
   m_TagString: Player1
@@ -2612,16 +2616,18 @@ MonoBehaviour:
   groundMask:
     serializedVersion: 2
     m_Bits: 256
-  groundDetectionTransform: {fileID: 0}
+  groundDetectionTransform: {fileID: 8202113914288226385}
   isGrounded: 1
-  movementSpeed: 5
+  movementSpeed: 2
   gravityFactor: -9.81
   currentVelY: 0
-  controller: {fileID: 0}
-  cutscene: 0
-  animator: {fileID: 0}
+  controller: {fileID: 904488301854456118}
+  animator: {fileID: 3997073878405039823}
   door: {fileID: 0}
   knife: {fileID: 0}
+  InventoryBar: {fileID: 0}
+  inventory: {fileID: 0}
+  mainCamera: {fileID: 6929838184760083580}
   Door: 0
   Knife: 0
 --- !u!143 &904488301854456118
@@ -2662,6 +2668,61 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
+--- !u!114 &7173486428589703471
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012453770551364725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d5a57f767e5e46a458fc5d3c628d0cbb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  GlobalObjectIdHash: 951099334
+  AlwaysReplicateAsRoot: 0
+  DontDestroyWithOwner: 0
+  AutoObjectParentSync: 1
+--- !u!114 &-8046022929326520452
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012453770551364725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: df2868252ab5c4d1da357e8f11f1b524, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SyncPositionX: 1
+  SyncPositionY: 0
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 0
+  SyncScaleY: 0
+  SyncScaleZ: 0
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  InLocalSpace: 0
+  Interpolate: 1
+--- !u!114 &3531381766806434538
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012453770551364725}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 19b6b3864acca6544ad8a14d98561059, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 5
 --- !u!1 &9082378902188089158
 GameObject:
   m_ObjectHideFlags: 0

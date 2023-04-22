@@ -3,9 +3,8 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Interaction : MonoBehaviour
+public class Interaction_black : MonoBehaviour
 {
-    /*
     public Image UI;
     public Image interactionText;
     public float interactionDistance = 1.0f;
@@ -15,7 +14,7 @@ public class Interaction : MonoBehaviour
 
     private void Start()
     {
-        playerTransform = GameObject.FindWithTag("Player").transform;
+        playerTransform = GameObject.FindWithTag("Player2").transform;
         characterController = playerTransform.GetComponent<CharacterController>();
         interactionText.gameObject.SetActive(false);
         UI.gameObject.SetActive(false);
@@ -48,5 +47,4 @@ public class Interaction : MonoBehaviour
             //interactionText.gameObject.SetActive(false);
         }
     }
-    */
 }

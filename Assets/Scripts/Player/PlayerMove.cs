@@ -2,9 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
+using Unity.Netcode;
 
-public class PlayerMove : MonoBehaviour
+public class PlayerMove : NetworkBehaviour
 {
+
     [Header("Ground Check")]
     public LayerMask groundMask;
     public Transform groundDetectionTransform;
@@ -37,15 +39,21 @@ public class PlayerMove : MonoBehaviour
     public bool Knife = false;
     private bool isCursorLocked = true;
 
+    // Spawn manager
+    private PlayerSpawnManager spawnManager;
+
 
     // Start is called before the first frame update
     void Start()
     {
-
+        if(!IsOwner) return;
         controller = GetComponent<CharacterController>();
         Cursor.lockState = CursorLockMode.Locked;
         Startpoint = transform.position;
         animator = GetComponent<Animator>();
+        spawnManager = GameObject.Find("PlayerSpawnManager").GetComponent<PlayerSpawnManager>();
+        InventoryBar = spawnManager.InventoryBar;
+        inventory = spawnManager.inventory;
     }
 
     public void CheckIsGrounded()
