@@ -11,7 +11,7 @@ public class Padlock : MonoBehaviour
 	string codeTextValue = "";
 	private int maxLength = 4;
     private string Answer = "5320";
-    public static bool padlockUnlocked = false;
+    public bool padlockUnlocked = false; //der stod static her, ved ikke om det gør en forskel i koden
     Color initialFontColor;
     int initialFontSize;
     public GameObject knife;

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using Unity.Burst.CompilerServices;
 using UnityEngine;
 
 public class Cat : MonoBehaviour
@@ -9,7 +10,7 @@ public class Cat : MonoBehaviour
 
     void OnTriggerEnter(Collider other) 
     {
-        if (other.gameObject == tounge) 
+        if (other.transform.tag == "Tongue")
         {
             colorpuzzle.SetActive(true);
         }
