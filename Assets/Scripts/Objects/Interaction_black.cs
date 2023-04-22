@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 
-public class Interaction : MonoBehaviour
+public class Interaction_black : MonoBehaviour
 {
     public Image UI;
     public Image interactionText;
@@ -14,7 +14,7 @@ public class Interaction : MonoBehaviour
 
     private void Start()
     {
-        playerTransform = GameObject.FindWithTag("Player1").transform;
+        playerTransform = GameObject.FindWithTag("Player2").transform;
         characterController = playerTransform.GetComponent<CharacterController>();
         interactionText.gameObject.SetActive(false);
         UI.gameObject.SetActive(false);
