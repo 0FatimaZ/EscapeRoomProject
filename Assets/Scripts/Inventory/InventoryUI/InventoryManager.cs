@@ -9,11 +9,12 @@ using UnityEngine.UI;
 public class InventoryManager : MonoBehaviour
 {
     public GameObject SlotPrefab;
-    public List<InventorySlot> InventorySlots = new List<InventorySlot>(10);
     public GameObject InventoryBar;
     public Button removebutton;
     public Inventory inventory;
 
+
+    public List<InventorySlot> InventorySlots = new List<InventorySlot>(10);
 
     public List<ItemData> AllItems = new List<ItemData>();
 
@@ -31,7 +32,7 @@ public class InventoryManager : MonoBehaviour
         }
     }
 
-    //At udfylde dictionary med items navne og prefabs (listen er udfyldt i unity)
+    //At udfylde dictionary med items navne og prefabs (listen af alle objekter udfyldt i unity)
     private void Start()
     {
         for (int i = 0; i < AllItems.Count; i++)
