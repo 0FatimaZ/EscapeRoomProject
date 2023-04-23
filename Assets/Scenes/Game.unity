@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17290151, g: 0.21607664, b: 0.29804045, a: 1}
+  m_IndirectSpecularColor: {r: 0.17290154, g: 0.21607673, b: 0.29804063, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -464,6 +464,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1590980599}
     m_Modifications:
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Size.z
+      value: 2.179732
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.x
+      value: 0.000000008735828
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.z
+      value: 1.0767317
+      objectReference: {fileID: 0}
     - target: {fileID: 2369244899059787320, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
       propertyPath: m_Name
       value: Blue candy (3)
@@ -1737,6 +1749,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1590980599}
     m_Modifications:
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Size.z
+      value: 2.3172493
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.x
+      value: 0.000000004645732
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.y
+      value: 0.12499999
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.z
+      value: 1.1454905
+      objectReference: {fileID: 0}
     - target: {fileID: 2369244899059787320, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
       propertyPath: m_Name
       value: Blue candy (6)
@@ -2338,6 +2366,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1590980599}
     m_Modifications:
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Size.z
+      value: 2.4263675
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.x
+      value: 0.0000000013112849
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.y
+      value: 0.124999985
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.z
+      value: 1.2000476
+      objectReference: {fileID: 0}
     - target: {fileID: 2369244899059787320, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
       propertyPath: m_Name
       value: Blue candy (4)
@@ -3764,6 +3808,18 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1590980599}
     m_Modifications:
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Size.z
+      value: 2.7915103
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.x
+      value: 0.00000019006349
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.z
+      value: 1.3826203
+      objectReference: {fileID: 0}
     - target: {fileID: 2369244899059787320, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
       propertyPath: m_Name
       value: Blue candy
@@ -4194,6 +4250,26 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1590980599}
     m_Modifications:
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Size.y
+      value: 1.25
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Size.z
+      value: 2.7461474
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.x
+      value: -0.0000000025902005
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.y
+      value: 0.12500003
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.z
+      value: 1.3599396
+      objectReference: {fileID: 0}
     - target: {fileID: 2369244899059787320, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
       propertyPath: m_Name
       value: Blue candy (1)
@@ -5130,6 +5206,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1590980599}
     m_Modifications:
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Size.z
+      value: 2.2605278
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.x
+      value: 0.00000018345787
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.y
+      value: 0.125
+      objectReference: {fileID: 0}
+    - target: {fileID: -6152847087231926691, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
+      propertyPath: m_Center.z
+      value: 1.1171294
+      objectReference: {fileID: 0}
     - target: {fileID: 2369244899059787320, guid: b6d6fa7fdf4a50446933db16b1f4a15f, type: 3}
       propertyPath: m_Name
       value: Blue candy (5)
