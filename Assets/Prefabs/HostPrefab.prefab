@@ -2560,8 +2560,9 @@ GameObject:
   - component: {fileID: 3997073878405039823}
   - component: {fileID: 7173486428589703471}
   - component: {fileID: -8046022929326520452}
+  - component: {fileID: 6114394907715080356}
   m_Layer: 0
-  m_Name: p1
+  m_Name: HostPrefab
   m_TagString: Player1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2708,6 +2709,19 @@ MonoBehaviour:
   ScaleThreshold: 0.01
   InLocalSpace: 0
   Interpolate: 1
+--- !u!114 &6114394907715080356
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012453770551364725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e27107a76c9116241a10996fb9f55151, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  spawnPoint: {fileID: 0}
 --- !u!1 &9082378902188089158
 GameObject:
   m_ObjectHideFlags: 0
