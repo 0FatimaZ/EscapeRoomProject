@@ -14,6 +14,6 @@ public class Start : MonoBehaviour
 
     public void ControlstButton()    
     {
-        SceneManager.LoadScene ("Tutorial");
+        SceneManager.LoadScene ("Controls");
     }   
 }
