@@ -40,6 +40,8 @@ public class PlayerMove : NetworkBehaviour
     // Spawn manager
     private PlayerSpawnManager spawnManager;
 
+    public Transform spawnpoint;
+
     //public PickUpObject pickup;
 
 
@@ -54,6 +56,17 @@ public class PlayerMove : NetworkBehaviour
         spawnManager = GameObject.Find("PlayerSpawnManager").GetComponent<PlayerSpawnManager>();
         InventoryBar = spawnManager.InventoryBar;
         inventory = spawnManager.inventory;
+        if (transform.gameObject.layer == 3)
+        {
+            spawnpoint = GameObject.FindGameObjectWithTag("spawnpoint1").GetComponent<Transform>();
+        }
+
+        else
+        {
+            spawnpoint = GameObject.FindGameObjectWithTag("spawnpoint2").GetComponent<Transform>();
+        }
+
+        transform.position = spawnpoint.position;
     }
 
     public void CheckIsGrounded()

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.17290151, g: 0.21607664, b: 0.29804045, a: 1}
+  m_IndirectSpecularColor: {r: 0.17290154, g: 0.21607673, b: 0.29804063, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -804,7 +804,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 254085375}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.840344, y: 1.0821354, z: 0.31312335}
+  m_LocalPosition: {x: 2.840344, y: 4.89, z: 0.31312335}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -1357,7 +1357,7 @@ GameObject:
   - component: {fileID: 541977201}
   m_Layer: 0
   m_Name: ClientSpawn
-  m_TagString: Untagged
+  m_TagString: spawnpoint2
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -1370,7 +1370,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 541977200}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.5873775, y: 1.727, z: 2.02}
+  m_LocalPosition: {x: 2.5873775, y: 12, z: 2.02}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2300,7 +2300,7 @@ GameObject:
   - component: {fileID: 770192443}
   m_Layer: 0
   m_Name: HostSpawn
-  m_TagString: Untagged
+  m_TagString: spawnpoint1
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2313,7 +2313,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 770192442}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4.441, y: 1.603, z: -4.357}
+  m_LocalPosition: {x: 4.441, y: 15.2, z: -4.357}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []

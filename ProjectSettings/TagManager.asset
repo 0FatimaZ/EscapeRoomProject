@@ -25,6 +25,8 @@ TagManager:
   - Player2
   - inventoryManager
   - MainCamera2
+  - spawnpoint1
+  - spawnpoint2
   layers:
   - Default
   - TransparentFX
