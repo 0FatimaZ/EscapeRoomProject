@@ -11,6 +11,8 @@ public class Wall : MonoBehaviour
 
     public GameObject knife;
 
+    public Padlock padlockscript;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -19,8 +21,10 @@ public class Wall : MonoBehaviour
 
     public void OpenorClose()
     {
-        if (GetComponentInChildren<Padlock>().padlockUnlocked == true)
+        print("Outside");
+        if (padlockscript.padlockUnlocked == true)
         {
+            print("Inside");
             animator.SetBool("isopen", true);
             open = true;
             knife.SetActive(true);

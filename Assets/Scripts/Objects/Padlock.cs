@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using static Unity.Collections.AllocatorManager;
 
 public class Padlock : MonoBehaviour
 {
@@ -17,7 +18,9 @@ public class Padlock : MonoBehaviour
     public GameObject knife;
     public GameObject wall;
     public Vector3 destination;
-    public float speed = 1f; 
+    public float speed = 1f;
+    public GameObject padUI;
+    public Wall wallscript;
 
     void Start()
     {
@@ -68,6 +71,7 @@ public class Padlock : MonoBehaviour
             codeText.color = newColor;
             codeText.fontSize = 23;
             padlockUnlocked = true;
+            print(padlockUnlocked);
         }
         else
         {   
@@ -87,10 +91,12 @@ public class Padlock : MonoBehaviour
 
         if (padlockUnlocked) 
         {
-        wall.transform.position = Vector3.Lerp(wall.transform.position, destination, Time.deltaTime * speed);
-        knife.SetActive(true);
+            //wall.transform.position = Vector3.Lerp(wall.transform.position, destination, Time.deltaTime * speed);
+            wallscript.OpenorClose();
+            //padUI.SetActive(false);
         }
-	}
+    }
+
 
 }
 
