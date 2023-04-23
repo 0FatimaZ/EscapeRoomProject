@@ -73,7 +73,7 @@ public class InventorySlot : MonoBehaviour
     }
 
     
-    //At tegne slottet
+    //At udfylde slottet
     public void DrawSlot(InventoryItem item, TextMeshProUGUI stackSize)
     {
         if (item == null)
