@@ -36,7 +36,7 @@ void Update()
 
     void OnTriggerEnter(Collider other)
     {
-        if (other.gameObject.layer == 3)
+        if (other.gameObject.CompareTag("Player"))
         {
             Canvasend.SetActive(true);
             audiosource.SetActive(false);
@@ -44,13 +44,13 @@ void Update()
             StartCoroutine(FinishCut());
         }
 
-        if (other.gameObject.layer == 6)
-        {
-            Canvasend.SetActive(true);
-            audiosource.SetActive(false);
-            StartCoroutine(Endcam2());
-            StartCoroutine(FinishCut());
-        }
+        //if (other.gameObject.layer == 6)
+        //{
+        //    Canvasend.SetActive(true);
+        //    audiosource.SetActive(false);
+        //    StartCoroutine(Endcam2());
+        //    StartCoroutine(FinishCut());
+        //}
 
 
     }
