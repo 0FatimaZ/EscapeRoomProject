@@ -12,14 +12,18 @@ public class Padlock : MonoBehaviour
 	string codeTextValue = "";
 	private int maxLength = 4;
     private string Answer = "5320";
+    public GameObject UI;
     public bool padlockUnlocked = false;
     Color initialFontColor;
     int initialFontSize;
-    public GameObject knife;
+
+    /*
     public GameObject wall;
     public Vector3 destination;
     public float speed = 1f;
     public GameObject padUI;
+    public GameObject knife;
+    */
     public Wall wallscript;
 
     void Start()
@@ -30,6 +34,8 @@ public class Padlock : MonoBehaviour
         codeText.fontSize = 54;
         initialFontColor = codeText.color;
         initialFontSize = (int)codeText.fontSize;
+
+        //wallscript = GameObject.Find("Wall");
     }
 
 	public void Number(string number)
@@ -92,8 +98,11 @@ public class Padlock : MonoBehaviour
         if (padlockUnlocked) 
         {
             //wall.transform.position = Vector3.Lerp(wall.transform.position, destination, Time.deltaTime * speed);
+            //knife.SetActive(true);
+            //wallscript.GetComponent<Wall>().OpenorClose();
             wallscript.OpenorClose();
             //padUI.SetActive(false);
+            UI.SetActive(false);
         }
     }
 

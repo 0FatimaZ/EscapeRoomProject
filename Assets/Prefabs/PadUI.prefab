@@ -440,7 +440,7 @@ MonoBehaviour:
   m_FallbackScreenDPI: 96
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
+  m_PresetInfoIsWorld: 1
 --- !u!114 &6978124990959573740
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -455,6 +455,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   codeText: {fileID: 6978124992265402076}
   delay: 0.5
+  padlockUnlocked: 0
+  wall: {fileID: 0}
+  destination: {x: 0, y: 0, z: 0}
+  speed: 1
+  padUI: {fileID: 0}
+  knife: {fileID: 0}
+  wallscript: {fileID: 0}
 --- !u!114 &6978124990959573736
 MonoBehaviour:
   m_ObjectHideFlags: 0
