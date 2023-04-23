@@ -574,6 +574,11 @@ GameObject:
   m_CorrespondingSourceObject: {fileID: 1132349073814331012, guid: a42b9096127a1ec4e879497e93a500b2, type: 3}
   m_PrefabInstance: {fileID: 222441893}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &204186782 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 5134121637872197918, guid: 75fa78c61a4829c44aeed0579e2cc4d8, type: 3}
+  m_PrefabInstance: {fileID: 1271980144}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &216927261
 GameObject:
   m_ObjectHideFlags: 0
@@ -1281,6 +1286,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 1274039142036093715}
+  interactionText: {fileID: 0}
+  interactionDistance: 1
 --- !u!23 &394494591
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -1559,6 +1567,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 1274039140936287181}
+  interactionText: {fileID: 0}
+  interactionDistance: 1
 --- !u!65 &587048921
 BoxCollider:
   m_ObjectHideFlags: 0
@@ -13180,6 +13191,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 204186782}
+  interactionText: {fileID: 0}
+  interactionDistance: 1
 --- !u!54 &3405553042005645143
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -14588,6 +14602,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 1274039140936287181}
+  interactionText: {fileID: 0}
+  interactionDistance: 1
 --- !u!33 &4089878036855598194
 MeshFilter:
   m_ObjectHideFlags: 0
@@ -15028,6 +15045,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 1274039142071957820}
+  interactionText: {fileID: 0}
+  interactionDistance: 2
 --- !u!1 &4320352341883737910
 GameObject:
   m_ObjectHideFlags: 0
@@ -18409,6 +18429,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 0}
+  interactionText: {fileID: 0}
+  interactionDistance: 1
 --- !u!23 &5958871203449131070
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -20223,6 +20246,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 1274039142036093715}
+  interactionText: {fileID: 0}
+  interactionDistance: 1
 --- !u!23 &7104495324412461509
 MeshRenderer:
   m_ObjectHideFlags: 0
@@ -22549,6 +22575,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 1274039140402847922}
+  interactionText: {fileID: 0}
+  interactionDistance: 1
 --- !u!114 &7917558767020700439
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -24067,6 +24096,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 71edfc9d2d4f8114ead894a780d672cb, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  UI: {fileID: 1274039141411350331}
+  interactionText: {fileID: 0}
+  interactionDistance: 1
 --- !u!114 &8455189993213863158
 MonoBehaviour:
   m_ObjectHideFlags: 0

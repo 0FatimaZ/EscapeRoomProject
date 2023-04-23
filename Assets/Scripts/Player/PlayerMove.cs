@@ -159,6 +159,7 @@ public class PlayerMove : NetworkBehaviour
     {
         if (other.gameObject.CompareTag("Door"))
         {
+            door = other.gameObject;
             Door = true;
         }
     }

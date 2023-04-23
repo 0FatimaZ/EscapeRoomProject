@@ -5,7 +5,6 @@ using UnityEngine.UI;
 
 public class Interaction : MonoBehaviour
 {
-    /*
     public GameObject UI;
     public Image interactionText;
     public float interactionDistance = 1.0f;
@@ -15,14 +14,17 @@ public class Interaction : MonoBehaviour
 
     private void Start()
     {
-        playerTransform = GameObject.FindWithTag("Player").transform;
-        characterController = playerTransform.GetComponent<CharacterController>();
-        //interactionText.gameObject.SetActive(false);
-        UI.gameObject.SetActive(false);
+        
     }
 
     private void Update()
     {
+
+        playerTransform = GameObject.FindWithTag("Player").transform;
+        characterController = playerTransform.GetComponent<CharacterController>();
+        //interactionText.gameObject.SetActive(false);
+        //UI.gameObject.SetActive(false);
+
         float distance = Vector3.Distance(transform.position, playerTransform.position);
 
         if (distance <= interactionDistance)
@@ -48,5 +50,4 @@ public class Interaction : MonoBehaviour
             //interactionText.gameObject.SetActive(false);
         }
     }
-    */
 }
