@@ -17,6 +17,8 @@ public class Padlock : MonoBehaviour
     Color initialFontColor;
     int initialFontSize;
     public Wall wallscript;
+    private Transform playerTransform;
+    private CharacterController characterController;
 
     void Start()
     {
@@ -83,12 +85,17 @@ public class Padlock : MonoBehaviour
 
 	void Update () 
 	{
-		codeText.text = codeTextValue;
+		
+        codeText.text = codeTextValue;
+
+        playerTransform = GameObject.FindWithTag("Player").transform;
+        characterController = playerTransform.GetComponent<CharacterController>();
 
         if (padlockUnlocked) 
         {
             wallscript.OpenorClose();
             UI.SetActive(false);
+            characterController.enabled = false;
         }
     }
 

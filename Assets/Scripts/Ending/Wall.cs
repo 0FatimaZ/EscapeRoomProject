@@ -16,6 +16,7 @@ public class Wall : MonoBehaviour
 
     void Update() 
     {
+
         if (moveWall) 
         {
             wall.transform.position = Vector3.Lerp(wall.transform.position, destination, Time.deltaTime * speed);

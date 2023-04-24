@@ -1497,8 +1497,6 @@ MonoBehaviour:
   mouseSensitivity: 150
   mousesmoothing: 2
   playerbody: {fileID: 4680352351850422148}
-  start_vc: {fileID: 0}
-  subtitleText: []
 --- !u!81 &5150229939329592902
 AudioListener:
   m_ObjectHideFlags: 0
@@ -1638,14 +1636,15 @@ MonoBehaviour:
   gravityFactor: -9.81
   currentVelY: 0
   controller: {fileID: 5150229938619254737}
+  playervel: {x: 0, y: 0, z: 0}
   animator: {fileID: 5150229938619254736}
   door: {fileID: 0}
-  knife: {fileID: 0}
   InventoryBar: {fileID: 0}
   inventory: {fileID: 0}
   mainCamera: {fileID: 0}
+  pickup: {fileID: 0}
   Door: 0
-  Knife: 0
+  spawnpoint: {fileID: 0}
 --- !u!114 &5150229938619254739
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -1658,6 +1657,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7e709bdc277465c458c2f9055bb9d6b4, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  collecting: 0
 --- !u!114 &1158181298934576299
 MonoBehaviour:
   m_ObjectHideFlags: 0

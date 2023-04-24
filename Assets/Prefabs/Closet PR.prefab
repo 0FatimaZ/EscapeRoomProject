@@ -1122,7 +1122,7 @@ GameObject:
   - component: {fileID: 8494740173613048671}
   - component: {fileID: 8244358444775064759}
   - component: {fileID: 1350484105596552411}
-  - component: {fileID: 1588889907312014714}
+  - component: {fileID: 4522988235441488097}
   m_Layer: 0
   m_Name: Closet PR
   m_TagString: Door
@@ -1137,9 +1137,9 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9126739820289358309}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -0.40969348, y: 1.7168434, z: 0.9405476}
-  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: 3.006017, y: -0.7919977, z: -2.014338}
+  m_LocalScale: {x: 0.75103444, y: 0.75103444, z: 0.75103444}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 672079217262457793}
@@ -1164,11 +1164,11 @@ BoxCollider:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 9126739820289358309}
   m_Material: {fileID: 0}
-  m_IsTrigger: 0
+  m_IsTrigger: 1
   m_Enabled: 1
   serializedVersion: 2
-  m_Size: {x: 2.062097, y: 0.85191953, z: 2.5357351}
-  m_Center: {x: -0.45928526, y: -1.2187517, z: -0.007176161}
+  m_Size: {x: 2.169133, y: 4.061787, z: 2.5357351}
+  m_Center: {x: -0.51280344, y: 0.38618338, z: -0.007176197}
 --- !u!95 &1350484105596552411
 Animator:
   serializedVersion: 5
@@ -1189,7 +1189,7 @@ Animator:
   m_HasTransformHierarchy: 1
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
---- !u!114 &1588889907312014714
+--- !u!114 &4522988235441488097
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
