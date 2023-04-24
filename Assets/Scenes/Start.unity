@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.12731704, g: 0.13414726, b: 0.1210787, a: 1}
+  m_IndirectSpecularColor: {r: 0.12731725, g: 0.13414745, b: 0.12107873, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -286,7 +286,7 @@ RectTransform:
   m_GameObject: {fileID: 257402691}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.041164, y: 2.041164, z: 2.041164}
+  m_LocalScale: {x: 4.332575, y: 4.332575, z: 4.332575}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 27212497}
@@ -295,7 +295,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0099792, y: -111}
+  m_AnchoredPosition: {x: -0.0099792, y: -171}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &257402693
@@ -427,8 +427,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.002594, y: 0.0037842}
-  m_SizeDelta: {x: 354.78, y: 249.7}
+  m_AnchoredPosition: {x: -0.0013428, y: 0.00042725}
+  m_SizeDelta: {x: 825.17, y: 464.16}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &296476582
 MonoBehaviour:
@@ -715,7 +715,7 @@ RectTransform:
   m_GameObject: {fileID: 1695888035}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 2.041164, y: 2.041164, z: 2.041164}
+  m_LocalScale: {x: 4.332575, y: 4.332575, z: 4.332575}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 633043451}
@@ -724,7 +724,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0.0099792, y: -191}
+  m_AnchoredPosition: {x: -0.0099792, y: -340.804}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1695888037
