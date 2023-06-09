@@ -94,7 +94,7 @@ GameObject:
   - component: {fileID: 8864738933168068588}
   - component: {fileID: 6629016686563979545}
   - component: {fileID: 5707664339518616224}
-  - component: {fileID: 7296053820088908697}
+  - component: {fileID: 7761013289982815184}
   m_Layer: 0
   m_Name: Wood
   m_TagString: Untagged
@@ -144,7 +144,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   itemData: {fileID: 11400000, guid: 66b352e77fd1af54f9dda992f246bb16, type: 2}
---- !u!54 &7296053820088908697
+--- !u!54 &7761013289982815184
 Rigidbody:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}

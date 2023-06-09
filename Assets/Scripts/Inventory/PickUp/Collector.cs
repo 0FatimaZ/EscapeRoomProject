@@ -5,13 +5,13 @@ using UnityEngine;
 public class Collector : MonoBehaviour
 {
 
-    public bool collecting;
+    //public bool collecting;
 
     ICollectible collectible;
 
     private void Update()
     {
-       if (collecting == true && Input.GetKeyDown(KeyCode.P))
+       if ( Input.GetKeyDown(KeyCode.P))
         {
             collectible.Collect();
         }
@@ -22,15 +22,15 @@ public class Collector : MonoBehaviour
         
         if (collectible != null)
         {
-            //collectible.Collect();
-            collecting = true;
+            collectible.Collect();
+            //collecting = true;
             print("Collectible is not null");
         }
     }
 
     private void OnCollisionExit(Collision collision)
     {
-        collecting = false;
+        //collecting = false;
     }
 
 }

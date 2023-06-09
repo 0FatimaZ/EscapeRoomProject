@@ -21,24 +21,24 @@ public class InventorySlot : MonoBehaviour
 
     //RELEVANT
     // OnClick for at fjerne og spawne objekt
-    public void OnClick()
-       
-    {
-        print("onclick accesed");
-        if (item != null)
-        {
-            if (cameraUnity)
-            {
-                inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity.position.x, cameraUnity.position.y, cameraUnity.position.z * 2));
-            }
-            else
-            {
-                inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity2.position.x, cameraUnity2.position.y, cameraUnity2.position.z * 2));
-            }
-        }
-        print("item = null");
+    //public void OnClick()
 
-    }
+    //{
+    //    print("onclick accesed");
+    //    if (item != null)
+    //    {
+    //        if (cameraUnity)
+    //        {
+    //            inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity.position.x, cameraUnity.position.y, cameraUnity.position.z + 150));
+    //        }
+    //        else
+    //        {
+    //            inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity2.position.x, cameraUnity2.position.y, cameraUnity2.position.z + 150));
+    //        }
+    //    }
+    //    print("item = null");
+
+    //}
 
     //At finde relevante tags
     private void Start()
@@ -98,6 +98,7 @@ public class InventorySlot : MonoBehaviour
     //At fjerne fra slot og inventory og spawn objektet der fjernes
     public void DecreaseStackSize()
     {
+        print("Decrease stack size");
         
         item.stackSize--;
         DrawSlot(item, GetStackSize());
@@ -105,16 +106,27 @@ public class InventorySlot : MonoBehaviour
 
         if (cameraUnity)
         {
-            inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity.position);
-            print("Yes cam 1");
+            inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity.position.x, cameraUnity.position.y, cameraUnity.position.z + 20));
+            print("cam 1");
+        }
+        else
+        {
+            inventoryManager.Instantiate3DObject(item.itemData.displayName, new Vector3(cameraUnity2.position.x, cameraUnity2.position.y, cameraUnity2.position.z + 20));
+            print("cam 2");
         }
 
-        if (cameraUnity2)
-        {
-            inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity2.position);
-            print("yes cam 2");
-        }
-       
+        //if (cameraUnity)
+        //{
+        //    inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity.position);
+        //    print("Yes cam 1");
+        //}
+
+        //if (cameraUnity2)
+        //{
+        //    inventoryManager.Instantiate3DObject(item.itemData.displayName, cameraUnity2.position);
+        //    print("yes cam 2");
+        //}
+
         item.collider.enabled = true;
 
         if (item.stackSize <= 0)
