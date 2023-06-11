@@ -162,6 +162,7 @@ public class PlayerMove : NetworkBehaviour
             door = other.gameObject;
             Door = true;
         }
+
     }
 
     //private void OnCollisionEnter(Collision collision)

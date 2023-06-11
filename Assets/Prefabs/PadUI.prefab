@@ -121,7 +121,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5
@@ -330,7 +330,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: DelLast
         m_Mode: 1
@@ -353,8 +353,8 @@ GameObject:
   - component: {fileID: 6978124990959573741}
   - component: {fileID: 6978124990959573742}
   - component: {fileID: 6978124990959573743}
-  - component: {fileID: 6978124990959573740}
   - component: {fileID: 6978124990959573736}
+  - component: {fileID: 5097969143566337248}
   m_Layer: 5
   m_Name: PadUI
   m_TagString: Untagged
@@ -441,27 +441,6 @@ MonoBehaviour:
   m_DefaultSpriteDPI: 96
   m_DynamicPixelsPerUnit: 1
   m_PresetInfoIsWorld: 1
---- !u!114 &6978124990959573740
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6978124990959573737}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8abf9bce99dea2b429ebfaff1ec44127, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  codeText: {fileID: 6978124992265402076}
-  delay: 0.5
-  padlockUnlocked: 0
-  wall: {fileID: 0}
-  destination: {x: 0, y: 0, z: 0}
-  speed: 1
-  padUI: {fileID: 0}
-  knife: {fileID: 0}
-  wallscript: {fileID: 0}
 --- !u!114 &6978124990959573736
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -479,6 +458,23 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &5097969143566337248
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6978124990959573737}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 8abf9bce99dea2b429ebfaff1ec44127, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  codeText: {fileID: 6978124992265402076}
+  delay: 0.5
+  UI: {fileID: 6978124990959573737}
+  padlockUnlocked: 0
+  wallscript: {fileID: 6514200169777023043, guid: 4aa1fd38e3ddab6498daca3607ba1ecd, type: 3}
 --- !u!1 &6978124991246627423
 GameObject:
   m_ObjectHideFlags: 0
@@ -600,7 +596,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5
@@ -733,7 +729,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5
@@ -866,7 +862,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5
@@ -999,7 +995,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5
@@ -1132,7 +1128,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Execute
         m_Mode: 1
@@ -1341,7 +1337,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5
@@ -1474,7 +1470,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5
@@ -1607,7 +1603,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5
@@ -1740,7 +1736,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5
@@ -2008,7 +2004,7 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 6978124990959573740}
+      - m_Target: {fileID: 5097969143566337248}
         m_TargetAssemblyTypeName: Padlock, Assembly-CSharp
         m_MethodName: Number
         m_Mode: 5

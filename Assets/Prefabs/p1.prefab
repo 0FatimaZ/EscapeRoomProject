@@ -987,7 +987,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 3504680806334149108}
   m_LocalRotation: {x: -0, y: -0.6427877, z: -0, w: -0.7660444}
-  m_LocalPosition: {x: -0.058, y: 1.365, z: -0.015}
+  m_LocalPosition: {x: 0.28, y: 1.365, z: 0.044}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -2559,10 +2559,10 @@ GameObject:
   - component: {fileID: 904488301854456118}
   - component: {fileID: 3997073878405039823}
   - component: {fileID: 7173486428589703471}
-  - component: {fileID: -8046022929326520452}
   - component: {fileID: -8965139982248285930}
   - component: {fileID: 4399783958767350773}
   - component: {fileID: 4849591772905222920}
+  - component: {fileID: 1505239660714107635}
   m_Layer: 0
   m_Name: p1
   m_TagString: Player
@@ -2625,12 +2625,13 @@ MonoBehaviour:
   controller: {fileID: 904488301854456118}
   playervel: {x: 0, y: 0, z: 0}
   animator: {fileID: 3997073878405039823}
-  door: {fileID: 0}
+  door: {fileID: 6983906080590980023, guid: 1692cdf6c57a9f74c9423eaf47616b1b, type: 3}
   InventoryBar: {fileID: 0}
   inventory: {fileID: 0}
   mainCamera: {fileID: 6929838184760083580}
   pickup: {fileID: 0}
   Door: 0
+  spawnpoint: {fileID: 0}
 --- !u!143 &904488301854456118
 CharacterController:
   m_ObjectHideFlags: 0
@@ -2685,32 +2686,6 @@ MonoBehaviour:
   AlwaysReplicateAsRoot: 0
   DontDestroyWithOwner: 0
   AutoObjectParentSync: 1
---- !u!114 &-8046022929326520452
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 9012453770551364725}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: df2868252ab5c4d1da357e8f11f1b524, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  SyncPositionX: 1
-  SyncPositionY: 0
-  SyncPositionZ: 1
-  SyncRotAngleX: 1
-  SyncRotAngleY: 1
-  SyncRotAngleZ: 1
-  SyncScaleX: 0
-  SyncScaleY: 0
-  SyncScaleZ: 0
-  PositionThreshold: 0.001
-  RotAngleThreshold: 0.01
-  ScaleThreshold: 0.01
-  InLocalSpace: 0
-  Interpolate: 1
 --- !u!54 &-8965139982248285930
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2753,6 +2728,32 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f6c0be61502bb534f922ebb746851216, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &1505239660714107635
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9012453770551364725}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: e96cb6065543e43c4a752faaa1468eb1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SyncPositionX: 1
+  SyncPositionY: 1
+  SyncPositionZ: 1
+  SyncRotAngleX: 1
+  SyncRotAngleY: 1
+  SyncRotAngleZ: 1
+  SyncScaleX: 1
+  SyncScaleY: 1
+  SyncScaleZ: 1
+  PositionThreshold: 0.001
+  RotAngleThreshold: 0.01
+  ScaleThreshold: 0.01
+  InLocalSpace: 0
+  Interpolate: 1
 --- !u!1 &9082378902188089158
 GameObject:
   m_ObjectHideFlags: 0

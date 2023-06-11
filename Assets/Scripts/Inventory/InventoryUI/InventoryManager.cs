@@ -35,8 +35,10 @@ public class InventoryManager : MonoBehaviour
     //At udfylde dictionary med items navne og prefabs (listen af alle objekter udfyldt i unity)
     private void Start()
     {
+        print("start accesed");
         for (int i = 0; i < AllItems.Count; i++)
         {
+            print("for kører");
             iconToObjectPrefabMap.Add(AllItems[i].displayName, AllItems[i].prefab);
             print("Dictionary filled");
         }
